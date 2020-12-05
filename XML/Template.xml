@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<units xmlns="" xmlns:xsi="">
+<unit type="BATCH">
+<unit-info>
+<unit-id>*</unit-id>
+<order-id>*</order-id>
+<parcel-id>*</parcel-id>
+<supplier-id>*</supplier-id>
+<timestamp>20**-**-**T**:**:**</timestamp>
+</unit-info>
+<unit-content>
+<bibrecord>
+<item-info>
+<status state="new" stage="S300"/>
+<itemidlist>
+<ce:doi>***</ce:doi>
+<itemid idtype="IPUI">***</itemid>
+<itemid idtype="TPA-ID">***</itemid>
+</itemidlist>
+</item-info>
+<head>
+<citation-info>
+<citation-type code="ar"/>
+<citation-language xml:lang="ENG"/>
+<abstract-language xml:lang="ENG"/>
+<author-keywords>
+<author-keyword>***</author-keyword>
+<author-keyword>***</author-keyword>
+<author-keyword>***</author-keyword>
+</author-keywords>
+</citation-info>
+<citation-title>
+<titletext xml:lang="ENG" original="y">***</titletext>
+</citation-title>
+<author-group seq="1">
+<author seq="1">
+<ce:initials>**</ce:initials>
+<ce:surname>**</ce:surname>
+<ce:given-name>**</ce:given-name>
+</author>
+<affiliation>
+<organization>**</organization>
+<city>**</city>
+<state>**</state>
+<country iso-code="***"/>
+<ce:source-text>***</ce:source-text>
+</affiliation>
+</author-group>
+<correspondence>
+<person>
+<ce:initials>***</ce:initials>
+<ce:surname>***</ce:surname>
+<ce:given-name>***</ce:given-name>
+</person>
+<affiliation>
+<organization>***</organization>
+<city>***</city>
+<state>***</state>
+<country iso-code="***"/>
+</affiliation>
+<ce:e-address>***</ce:e-address>
+</correspondence>
+<abstracts>
+<abstract xml:lang="ENG" original="y">
+<publishercopyright>&#x00A9; ***</publishercopyright>
+<ce:para>***</ce:para>
+</abstract>
+</abstracts>
+<source srcid="***">
+<volisspag>
+<volume-issue-number>
+<vol-first>***</vol-first>
+<iss-first>***</iss-first>
+</volume-issue-number>
+<page-information>
+<pages>
+<first-page>***</first-page>
+<last-page>***</last-page>
+</pages>
+</page-information>
+</volisspag>
+<publicationyear first="***"/>
+<publicationdate>
+<year>***</year>
+<month>***</month>
+<day>***</day>
+<date-text>***</date-text>
+</publicationdate></source>
+</head>
+<tail>
+<bibliography refcount="**">
+<reference seq="">
+<ref-info></ref-info>
+<ref-fulltext></ref-fulltext>
+<ce:source-text></ce:source-text>
+</reference>
+</bibliography>
+</tail>
+</bibrecord>
+</unit-content>
+</unit>
+</units>
