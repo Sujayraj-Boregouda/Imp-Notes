@@ -1,0 +1,2 @@
+(define-macro "kumar-ref" "C-S\<ref-fulltext>C-MC-@C-S\</ref-fulltext><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>A-w<End>C-S\<ce:source-text>C-MC-Y<End><Right><End><Right>")
+(bind-to-key "kumar-ref" "C-F-6")
