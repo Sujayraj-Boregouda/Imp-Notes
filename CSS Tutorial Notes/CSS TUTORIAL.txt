@@ -1,0 +1,1604 @@
+CSS=CASCADING STYLE SHEET
+DECORATE, STYLE , DESIGN , ATTRACTIVE.
+3 TYPES
+1) INLINE CSS
+2) INTERNAL CSS
+3) EXTERNAL CSS .
+
+1) INLINE (SAME LINE/SINGLE PARAGRAPH)
+<p style="color:red;"> MY name </p>
+
+2)INTERNAL CSS ( TO APPLY TO MUTILPLE PARAGRAPH or heading) (DIRECTLY WRITE IN HEAD TO SAVE TIME)
+<style>
+p {}
+</style>
+
+3) EXTERNAL CSS (TO APPLY TO EXTERNAL /MULTIPLE WEBPAGES) (EXTENSION:.CSS)
+IMPORTANT
+
+P{color:green;}
+body{background-color:blue;}
+h1{color:yellow;}
+*** remember to save as separate.css extension file and provide link in header tag.
+*** <link rel="stylesheet" href="location.css" >
+*** to learn
+1) properties like=font/color.
+2) html= animation/graphic.
+
+
+freecodecamp.org
+*** css provides higher proririty to ids than classes.
+
+1) USE INLINE STYLES TO CHANGE THE COLOR OF THE TEXT. (RIGHT ON THE ELEMENT)
+ 
+<p style="color:blue;">
+<h2 style="color:red;">
+
+<style>
+
+p {color:red;} (all paragrah will be red)
+
+</style>
+
+<style>
+
+h2 {color:blue;} (all h2 will be blue)
+
+</style>
+
+
+
+
+2) USE CSS CLASS TO STYLE AN ELEMENT
+
+<style>
+.blue-text {color:blue;}
+</style>
+
+
+<p class="blue-text">
+
+<h2 class="red-txt">
+
+
+
+
+3) STYLE MULTIPLE ELEMENTS WITH A CSS CLASS
+<p class="red-text"> (applies to all p)
+
+
+
+4) CHANGE THE FONT SIZE OF AN ELEMENT
+
+<style>
+.red-text 
+{
+color:red;
+font-size: 30px; (applies for all the red element)
+}
+</style>
+
+<style>
+.red-text 
+{
+color:red;
+}
+p { 
+font-size: 16px; (px=pixels) (applied separately for paragraph p)
+}
+</style>
+
+
+
+
+
+5) SET THE FONT FAMILY OF AN ELEMENT
+<style>
+.red-text 
+{
+color:red;
+}
+p { 
+font-size: 16px; (px=pixels) (applied separately for paragraph p)
+font-family: monospace;   (newly added)
+}
+</style>
+
+
+6) IMPORT A GOOGLE FONT
+IMPORT FROM GOOGLE FONT WEBSITE (LEARN HOW TO IMPORT***)
+
+h2
+{
+font-family=lobster;
+}
+
+
+
+7) SPECIFY HOW FONTS SHOULD DEGRADE
+
+DEFAULT FONTS AVAILABLE IN BROWSERS( monospace/serra/sanserra)
+
+font-family:helvetica, monospace;
+
+
+
+8) SIZE YOUR IMAGE
+
+<style>
+.larger-image      (new)
+{width: 500px;}
+.red-text 
+{
+color:red;
+}
+
+
+*** then apply this class to somewhere else
+
+<a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute cat lying on its back"> </a>
+
+a href="#"><img class="larger-image" src="https://bit.ly/fcc-relaxing-cat" alt="A cute cat lying on its back"> </a>
+
+
+
+
+
+
+9)ADD BORDERS AROUND YOUR ELEMENTS
+(STYLE / COLOR/ WIDTH)
+
+h2 {
+font-family: lobster, monospace;
+border-color:red;
+border-width: 5px;
+border-style: solid;
+}
+
+
+<style>
+.thick-green-border {
+border-color:red;
+border-width: 5px;
+border-style: solid;  (new)
+}
+</STYLE>
+
+***now apply this class to somewhere else
+
+(***can apply 2 class in same line)a href="#"><img class="larger-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute cat lying on its back"> </a>
+
+
+10) ADD ROUNDED CORNERS WITH BORDER RADIUS
+
+style>
+.thick-green-border {
+border-color:red;
+border-width: 5px;
+border-style: solid; 
+border-radius: 10px;(new)
+}
+</STYLE>
+
+
+
+11) MAKE CIRCULAR IMAGES WITH A BORDER RADIUS
+style>
+.thick-green-border {
+border-color:red;
+border-width: 5px;
+border-style: solid; 
+border-radius: 50%;(new)
+}
+</STYLE>
+
+
+
+
+12) GIVE A BG COLOR TO DIV ELEMENT
+h2 {
+font-family: lobster, monospace;
+background-color: blue;
+border-color:red;
+border-width: 5px;
+border-style: solid;
+}
+
+
+<style>
+.silver-background
+{
+background-color:silver;
+}
+
+**and mention this class some where 
+
+
+<div class="silver-background">
+
+
+13) SET ID OF AN ELEMENT
+
+ CLASSES YOU CAN PUT ON LOT OF DIFFERENT ELEMENTS/ each element have one separate id
+
+<form id="cat-photo-form" action="/submit-cat-photo"> 
+
+
+
+14) USE ID ATTRIBUTE TO STYLE AN ELEMENT
+
+<style>
+
+#heading {
+color: green;
+}
+
+
+
+
+
+15)ADJUST THE PADDING OF AN ELEMENT
+
+<style>
+.injected-text {
+margin-bottom: -25px;
+text-align:center;
+}
+
+.box {
+border-style:solid;
+border-color:black;
+border-width:5px;
+text-align:center;
+}
+
+.yellow-box {
+background-color: yellow;
+padding: 10px:
+}
+
+.red-box {
+background-color: crimson;
+color:#fff;
+padding: 20px:
+margin:20px;
+}
+
+
+.blue-box {
+background-color: blue;
+color:#fff;
+padding: 10px:
+margin: 10px;
+}
+
+16) ADJUST THE MARGIN OF AN ELEMENT
+17)ADD A NEGATIVE MARGIN TO AN ELEMENT
+
+
+.red-box {
+background-color: crimson;
+color:#fff;
+padding: 20px:
+margin:-15px;
+}
+
+
+.blue-box {
+background-color: crimson;
+color:#fff;
+padding: 20px:
+margin:-15px;
+}
+
+(both boxes looks attached)
+
+
+
+18)ADD DIFFERNT PADDING TO EACH SIDE OF AN ELEMENT
+
+.red-box {
+background-color: crimson;
+color:#fff;
+padding-top: 20px:
+padding-right:15px;
+padding-bottom:15px;
+padding-left:15px;
+} 
+
+***or else feed data inclockwise pattern
+
+
+
+19)ADD DIFFERNT MARGIN TO EACH SIDE OF AN ELEMENT
+
+.red-box {
+background-color: crimson;
+color:#fff;
+margin-top: 20px:
+margin-right:15px;
+margin-bottom:15px;
+margin-left:15px;
+} 
+
+
+
+
+
+20) USE CLOCKWISE NOTATION TO SPECIFY PADDING OF AN ELEMENT
+
+.red-box {
+background-color: crimson;
+color:#fff;
+padding: 40px 40px 20px 40px;
+} 
+
+
+
+21) USE CLOCKWISE NOTATION TO SPECIFY MARGIN OF AN ELEMENT
+.red-box {
+background-color: crimson;
+color:#fff;
+margin: 40px 40px 20px 40px;
+} 
+
+
+
+
+22) USE ATTRIBUTE SELECTORS TO STYLE ELEMENTS
+
+<style>
+[type="radio"] {
+margin:20px;                  (to create margin around radio button)
+}  
+
+
+
+23) UNDERSTAND ABSOLUTE VS RELATIVE UNITS (TILL NOW ALL ARE ABSOLUTE UNITS)
+
+padding:1.5em;
+
+
+
+24) STYLE THE HTML BODY ELEMENT
+
+<style>
+body {
+	background-color: black;
+}
+</style>
+
+
+***every page has body element, but if it is not shown then its hidden.
+
+*** Cascading means anything that applies to upper element goes down to all other elements 
+
+ 
+
+25)  INHERIT STYLES FROM THE BODY ELEMENT
+<style>
+body {
+	background-color: black;
+	color:green;
+	font-family:monospace;
+}
+</style>
+<h1>hello world</h1>
+
+
+
+
+26) PRIORITIZE ONE STYLE OVER ANOTHER 
+
+
+
+<style>
+body {
+	background-color: black;
+	color:green;
+	font-family:monospace;
+}
+
+.pink-text {
+color:pink;
+}
+</style>
+<h1 class="pink-text">hello world</h1>
+
+
+
+27) OVERIDE STYLES IN SUBSEQUENT CSS
+
+<style>
+body {
+	background-color: black;
+	color:green;
+	font-family:monospace;
+}
+
+.pink-text {
+color:pink;
+}
+.blue-text {
+color:blue;
+}
+</style>
+<h1 class="pink-text blue-text">hello world</h1> (browser picks any one color depending on order)
+
+
+
+
+
+
+28)OVERIDE CLASS DECLARATIONS BY STYLING ID ATTRIBUTES
+
+<h1 class="pink-text blue-text" id="orange-text">hello world</h1> (browser picks any one color depending on order)
+
+
+#orange-text {
+color:orange;
+}
+
+***ids can be specified to only one element
+
+
+
+29) OVERIDE CLASS DECLARATIONS WITH INLINE STYLES
+style="color:red;"
+
+
+
+30) OVERIDE ALL OTHER STYLES BY USING IMPORTANT (POWERFULL)
+
+
+.pink-text {
+color:pink !important;
+}
+
+
+31) USE HEX CODE FOR SPECIFIC COLORS
+
+<style>
+body {
+	background-color:#000000; (black)	
+}
+</style>
+
+
+32) USE HEX CODE TO MIX COLORS (16 MILLION COLORS CAN BE PRODUCED)
+<style>
+.red-text {
+color: #FF0000; 
+}
+
+.green-text {
+color: #00FF00; 
+}
+
+.orange-text {
+color:#FFA500; 
+}
+
+.dodger-blue-text {
+color: #1E90FF; 
+}
+</style>
+
+
+
+33)USE ABBREVIATED HEX CODES
+.red-text {
+color: #F00; (FIRST DIGIT OF EVERY 2 DIGITS)
+}
+
+
+
+
+34) USE RGB VALUES TO COLOR ELEMENTS
+<style>
+body {
+	background-color: rgb(0,0,0); (black)	(each no btw 0 and 255)
+}
+</style
+
+
+35) USE RGB TO MIX COLORS
+ 
+.red-text {
+color:rgb(255, 0, 0); 
+} 
+
+
+
+
+
+36) USE CSS VARIABLES TO CHANGE SEVERAL ELEMENTS AT ONCE
+
+<style>
+.penguin {
+
+/* change code below */
+--penguin-skin: black;
+--penguin-belly: gray ;
+--penguin-beak: yellow;
+/* change code above */
+
+position: relative;
+margin: auto;
+display: black ;
+margin-top: 5%;
+width: 300px;
+height: 300px;
+}
+
+
+.penguin-top {
+top: 10%;
+left: 25%;
+background: var(--penguin-skin, gray); 
+width: 50%;
+height: 45%;
+border-radius: 70%, 70%, 60%, 60%;
+}
+
+.penguin-bottom {
+top: 40%;
+left: 23.5%;
+background: var(--penguin-skin, gray);
+width: 53%;
+height: 45%;
+border-radius: 70%, 70%, 100%, 100%;
+}
+
+.right-hand {
+top: 0%;
+left: -5%;
+background: var(--penguin-skin, gray);
+width: 30%;
+height: 60%;
+border-radius: 30%, 30%, 120%, 30%;
+transform: rotate(45deg);
+z-index: -1:
+}
+
+
+.left-hand {
+top: 0%;
+left: 75%;
+background: var(--penguin-skin, gray);
+width: 30%;
+height: 60%;
+border-radius: 30%, 30%, 30%, 120%;
+transform: rotate(-45deg);
+z-index: -1:
+}
+
+
+
+
+
+
+
+37)CREATE A CUSTOM VARIABLE
+
+--penguin-skin: GRAY; now wherever you put these variable this property will be applicable.
+
+
+
+
+
+
+
+38) ATTACH A FALLBACK VALUE TO A CSS VARIABLE
+
+TO USE VARIABLE YOU NEED TO PUT VAR/can write it in main and then apply to sub and when you change the main all sub will change.
+
+
+background: var(--penguin-skin);
+ 
+
+
+
+39) IMPROVE COMPATIBILITY WITH BROWSER FALLBACKS (add fall back value)
+
+background: var(--pengiun-skin, black);
+
+(wrong spelling or browser doesnt support) that time fallback value like black is used.
+
+
+
+
+40) CASCADING CSS VARIABLES
+
+
+to make variable avialable anywhere in the document, you can declare the element inside root.
+
+
+root element is the container for the entire html document.
+html is conatainer for the body element.
+
+:root {
+
+/* add code below */
+
+--penguin-belly: pink ;
+
+/* add code above */
+
+
+41) CHANGE A VARIABLE FOR A SPECIFIC AREA
+
+to overwrite 
+
+
+/* add code below */
+
+--penguin-belly: white ;
+
+/* add code above */
+
+
+
+
+
+42) USE A MEDIA QUERY TO CHANGE A VARIABLE
+
+DEPENDING SIZE UPON THE SCREEN or (to make variables only apply when the max px is 350 px)
+
+@media (max-width: 350 px) {
+:root {
+
+/* add code below */
+
+--penguin-size: 200px ;
+--penguin skin: black ;
+
+/* add code above */
+
+}
+
+}
+
+
+
+
+43) CREATE YOUR FIRST CSS GRID
+
+you can turn any html element into grid container by setting its display property to grid.
+
+
+<style>
+.d1{background:LightSkyBlue;}
+.d2{background:LightSalmon;}
+.d3{background:PaleTurquoise;}
+.d4{background:LightPink;}
+.d5{background:PaleGreen;}
+
+.container {
+font-size: 40px;
+width: 100%;
+background: LightGray;
+/* add code below this line */
+display: grid;
+
+/* add code above this line */
+}
+</style>
+
+<div class="container">
+<div class="d1">1</dv>
+<div class="d2">2</dv>
+<div class="d3">3</dv>
+<div class="d4">4</dv>
+<div class="d5">5</dv>
+</div>
+
+
+
+
+44) ADD COLUMNS WITH GRID TEMPLATES COLUMNS
+
+now 
+<style>
+.d1{background:LightSkyBlue;}
+.d2{background:LightSalmon;}
+.d3{background:PaleTurquoise;}
+.d4{background:LightPink;}
+.d5{background:PaleGreen;}
+
+.container {
+font-size: 40px;
+width: 100%;
+background: LightGray;
+display: grid;
+/* add code below this line */
+grid-template-columns: 100px 100px 100px; ( 3 numbers mean 3 columns)
+
+/* add code above this line */
+}
+</style>
+
+<div class="container">
+<div class="d1">1</dv>
+<div class="d2">2</dv>
+<div class="d3">3</dv>
+<div class="d4">4</dv>
+<div class="d5">5</dv>
+</div>
+
+
+
+45) ADD ROWS WITH GRID-TEMPLATE-ROWS
+
+.container {
+font-size: 40px;
+width: 100%;
+background: LightGray;
+display: grid;
+grid-template-columns: 100px 100px 100px; ( 3 numbers mean 3 columns)
+/* add code below this line */
+grid-template-rows: 100px 100px ; ( 2 numbers mean 2 rows)
+/* add code above this line */
+}
+
+
+
+
+
+
+46) USE CSS GRID UNITS TO CHANGE THE SIZE OF COLUMNS AND ROWS
+
+
+YPU CAN USE PX AND EM BUT YOU CAN ALSO USE FR
+
+.container {
+font-size: 40px;
+width: 100%;
+background: LightGray;
+display: grid;
+
+/* modify code below this line */
+
+grid-template-columns: auto 100px 10% 2fr 1fr; ( 5 numbers mean 5 columns but now with different sizes)
+
+/* modify code above this line */
+grid-template-rows: 100px 100px ;
+}
+
+note:
+** auto=it will be just good enough to fit the one associated number
+** 100px= 100px wide
+** 10%= 10% of the total available section from the whole container
+** 2fr= last 2 colums divide remaining sections in to three columns and allocated (2fr+1fr)=3fr
+** 1fr=
+
+**fr will be flexible to the screen sizes
+
+
+
+
+47) CREATE COLUMN GAP USING GRID-COLUMN-GAP
+**creates space in between each column 
+.container {
+font-size: 40px;
+width: 100%;
+background: LightGray;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: ; 1fr 1fr 1fr;
+
+/* add code below this line */
+grid-column-gap: 20px; 
+/* add code above this line */
+}
+ 
+</style>
+
+
+
+
+
+47) CREATE COLUMN GAP USING GRID-ROW-GAP
+**creates space in between each row  
+ 
+.container {
+font-size: 40px;
+width: 100%;
+background: LightGray;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: ; 1fr 1fr 1fr;
+
+/* add code below this line */
+grid-ROW-gap: 20px; 
+/* add code above this line */
+}
+ 
+</style>
+
+
+
+
+
+48) ADD GAPS FASTER WITH GRID GAPS
+
+**short hand property for using the grid row gap and grid column gap properties all at once.
+** if you put one numbers it will put same gap on the rows and columns
+** if you put two numbers it will put first number will be rows and 2 nd number will be columns.
+
+
+ 
+.container {
+font-size: 40px;
+width: 100%;
+background: LightGray;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: ; 1fr 1fr 1fr;
+
+/* add code below this line */
+
+grid-gap: 10px 20px;
+ 
+/* add code above this line */
+}
+ 
+</style>
+
+
+
+
+
+49) USE GRID-COLUMN TO CONTROL SPACING
+**grid column property is used to set how many columns a grid item will take up. 
+** 2 columns means line1 and line 3
+
+
+<style>
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+
+.item5{
+background:PaleGreen;
+
+/* add code below this line */
+
+grid-column: 1/3; (means corresponding element starts at 1 and ends at 3)
+
+/* add code above this line */
+}
+
+.container {
+font-size: 40px;
+min-height: 300px;
+width: 100%;
+background: LightGray;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-gap: 10px;
+}
+</style>
+
+
+
+50) USE GRID-ROW TO CONTROL SPACING
+ 
+<style>
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+
+.item5{
+background:PaleGreen;
+grid-column: 2 / 4;
+/* add code below this line */
+
+grid-row: 2 / 4; (means corresponding element starts at 2 and ends at 4)
+
+/* add code above this line */
+}
+
+.container {
+font-size: 40px;
+min-height: 300px;
+width: 100%;
+background: LightGray;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-gap: 10px;
+}
+</style>
+
+
+
+
+
+51) ALIGN AN ITEM HORIZONTALLY USING JUSTIFY-SELF
+
+** in css grid each box is considered a cell, so each box is considered diff cells, if we use justify cells, we can justify the line content in cells
+** by defauly the property is stretch by which element filled up on the whole cell. 
+
+
+.item5{
+background:PaleGreen;
+/* add code below this line */
+
+justify-self: center; (means text will be at center)
+
+/* add code above this line */
+}
+
+** can also use start and end
+
+
+
+52) ALIGN AN ITEM VERTICALLY USING ALIGN-SELF
+
+item5{
+background:PaleGreen;
+/* add code below this line */
+
+align-self:end ; (means text will be at center)
+
+/* add code above this line */
+}
+
+
+
+
+
+53) ALIGN ALL ITEMS HORIZONTALLY USING JUSTIFY-ITEMS
+
+**use this value in the parent container
+
+<style>
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+.item5{background:PaleGreen;}
+
+
+.container {
+font-size: 40px;
+min-height: 300px;
+width: 100%;
+background: LightGray;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-gap: 10px;
+
+/* add code below this line */
+
+justify-items: center;
+
+/* add code above this line */
+
+
+}
+</style>
+
+
+
+
+
+54) ALIGN ALL ITEMS VERTICALLY USING ALIGN-ITEMS
+
+style>
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+.item5{background:PaleGreen;}
+
+
+.container {
+font-size: 40px;
+min-height: 300px;
+width: 100%;
+background: LightGray;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-gap: 10px;
+
+/* add code below this line */
+
+align-items:end;
+
+/* add code above this line */
+
+
+}
+</style>
+
+
+
+
+
+
+
+55) DIVIDE THE GRID INTO AN AREA TEMPLATE
+
+** basically defines the template area
+
+style>
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+.item5{background:PaleGreen;}
+
+
+.container {
+font-size: 40px;
+min-height: 300px;
+width: 100%;
+background: LightGray;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-gap: 10px;
+
+/* change code below this line */
+
+grid-template-areas:
+
+"header header header"
+" advert content content"
+"footer footer footer"
+
+/* change code above this line */
+
+
+}
+</style>
+
+<div class="container">
+<div class="item1">1</div>
+<div class="item2">2</div>
+<div class="item3">3</div>
+<div class="item4">4</div>
+<div class="item5">5</div>
+</div>
+
+****
+/* change code below this line */
+
+grid-template-areas:
+
+"header header header"       (whichever item is mentioned as header see 56 no)
+" . content content"
+"footer footer footer"       "9 words means 9 cells" "advert or . means empty cell"
+
+/* change code above this line */
+
+
+
+
+
+56) PLACE ITEMS IN GRID AREAS USING THE GRID-AREA PROPERTY
+
+** how to place items in the specific spot in the grid area
+
+.item5{
+background:PaleGreen;
+
+/* add code below this line */
+
+grid-area:header; (means item 5 will come at top)
+
+/* add code above this line */
+}
+
+
+
+57) USE GRID-AREA WITHOUT CREATING AN AREAS TEMPLATE
+** grid templates removed
+
+style>
+.item1{background:LightSkyBlue;}
+.item2{background:LightSalmon;}
+.item3{background:PaleTurquoise;}
+.item4{background:LightPink;}
+.item5{
+background:PaleGreen;
+/* add your code below this line */\
+
+grid-area:1/1/2/4; (takes entire top row, takes (3/1/2/4) bottom row)
+
+/* add your code above this line */
+
+}
+
+
+.container {
+font-size: 40px;
+min-height: 300px;
+width: 100%;
+background: LightGray;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-gap: 10px;
+
+}
+</style>
+
+<div class="container">
+<div class="item1">1</div>
+<div class="item2">2</div>
+<div class="item3">3</div>
+<div class="item4">4</div>
+<div class="item5">5</div>
+</div>
+
+
+
+
+*****58) REDUCE REPITATION USING THE REPEAT FUNCTION
+
+** if you want same size row and columns many times you can use repeat function
+
+grid-template-rows: 1fr 1fr fr;
+
+or
+
+grid-template-rows: 1fr 1fr fr; 
+
+
+
+
+
+
+59) LIMIT ITEM SIZE USING THE MINIMAX FUNCTION (adjusting column sizes to varying screen)
+** CAN BE USED ALTER THE SIZE OF THE MINMAX FUNCTION
+** MINMAX FUNCTION TAKES TWO ARGUMENT
+** FIRST NUMBER IS THE SMALLEST SIZE THAT A ROW OR COLUMN CAN BE
+** SECOND NUMBER IS THE LARGEST SIZE THAT A ROW OR COLUMN CAN BE
+
+
+grid-template-columns: repeat(3, minmax(90px, 1fr)); 
+
+
+** repeat 3 means number times it want to repeat.
+** means column can be minimum 90px according to varying screen sizes.
+** means column can be maximum 1fr according to varying screen sizes.
+
+
+
+60)CREATE FLEXIBLE LAYOUTS USING AUTO-FILL (**best according to me)
+
+
+grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); 
+
+
+
+61)CREATE FLEXIBLE LAYOUTS USING AUTO-Fit (best according to me)
+
+
+grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+
+
+
+
+
+
+62) USE MEDIA QUERIES TO CREATE RESPONSIVE LAYOUTS (important)
+
+**media queries can be used along with template areas to make responsive layouts.
+
+<style>
+.item1 {
+background: LightSkyBlue;
+grid-area: content;
+}
+
+
+.item2 {
+background: LightSalmon;
+grid-area: content;
+}
+
+.item3 {
+background: PaleTurquoise;
+grid-area: content;
+}
+
+
+.item4 {
+background: lightpink;
+grid-area: content;
+}
+
+
+.container {
+font-size: 1.5em;
+min-height: 300px;
+width: 100%;
+background: LightGray;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 50px auto 1fr auto;
+grid-gap: 10px;
+grid-template-areas;
+"header"
+"advert"
+"content"
+"footer"
+}
+
+@media (min-width: 300px){
+.container{
+grid-template-columns:auto 1fr;
+grid-template-rows:auto 1fr auto;
+grid-template-areas:
+"advert header"
+"advert content"
+"advert footer"
+}
+}
+
+@media (min-width: 400px) {
+.container {
+
+/* change the code below this line */
+
+grid-template-areas:
+
+"advert header"
+"advert content"
+"advert footer";
+
+
+ex:
+"header header"
+"advert content"
+"footer footer";
+
+
+
+
+
+
+
+
+63) CREATE GRIDS WITHIN GRIDS
+
+.item3 {
+background: PaleTurquoise;
+grid-area: content;
+
+/* enter your code below this line */
+
+display:grid;
+grid-template-columns: auto 1fr;
+
+/* enter your code above this line */
+
+
+}
+
+
+
+
+
+
+64)USE DISPLAY: FLEX TO POSITION TWO BOXES
+**flex box is used to possition css elements in a flexible way.
+** display flex is must
+
+
+
+<style>
+#box-container {
+height: 500px;
+display: flex; (***boxes will sit next to each other)
+}
+
+#box-1 {
+background-color: dodgerblue;
+width: 50%;
+height: 50%;
+}
+
+#box-2 {
+background-color: orangered;
+width: 50%;
+height: 50%;
+}
+
+
+
+</style>
+<div id="box-container">
+<div id="box-1"></div>
+<div id="box-2"></div>
+</div>
+
+
+
+
+
+
+
+65) ADD FLEX SUPERPOWERS TO THE TWEET EMBED
+** to style
+
+<style>
+body {
+font-family: arial, sans-serif;
+}
+
+header {
+display: flex;
+}
+
+header .profile-thumbnail {
+width: 50px;
+height: 50px;
+border-radius: 4px;
+}
+header .profile-name {
+display: flex;
+margin-left: 10px;
+
+}
+header .follow-btn {
+display: flex;
+margin: 0 0 0 auto;
+
+}
+
+header .follow-btn button {
+border: 0;
+border-radius: 3px;
+padding: 5px;
+}
+
+header h3, header h4 {
+display: flex;
+font-size: 20px;
+}
+
+#inner p {
+margin-bottom:10px;
+font-size: 20px;
+
+#inner hr {
+margin: 20px 0;
+border-style: solid;
+opacity: 0.1;
+}
+
+footer {
+display: flex;
+}
+
+footer .stats {
+display: flex;
+font-size: 15px;
+
+
+
+
+
+66) USE THE FLEX-DIRECTION PROPERTY TO MAKE A ROW
+** default flex direction is row but it can also be used to column and row/column reverse
+<style>
+#box-container {
+height: 500px;
+display: flex;
+flex-direction: row-reverse;  (**reversed)
+
+}
+
+
+67) APPLY THE FLEX-DIRECTION PROPERTY TO CREATE ROWS IN THE TWEET EMBED
+
+flex-direction: row;
+
+
+
+
+68) USE THE FLEX-DIRECTION PROPERTY TO MAKE A COLUMN
+
+
+flex-direction: column;
+
+
+
+69) APPLY THE FLEX-DIRECTION PROERTY TO CREATE A COLUMN IN THE TWEET EMBED
+
+flex-direction: column;
+
+
+
+70) ALIGN ELEMENTS USING THE JUSTIFY-CONTENT PROPERTY
+
+**MAIN AXIS
+** space the flex items is justify-content center
+
+flex start left side
+flex end right side
+space between will align all the element to center axis
+space around is similar to the space between, but the first and last item will be not locked to the edges of the container , and the space is distributed around all the items.
+
+
+
+<style>
+#box-container {
+height: 500px;
+display: flex;
+background: gray;
+justify-content: center; (everything will be centered)
+}
+
+#box-1 {
+background-color: dodgerblue;
+width: 50%;
+height: 50%;
+}
+
+#box-2 {
+background-color: orangered;
+width: 50%;
+height: 50%;
+}
+
+</style>
+<div id="box-container">
+<div id="box-1"></div>
+<div id="box-2"></div>
+</div>
+
+
+
+
+71) USE THE JUSTIFY-CONTENT PROPERTY IN THE TWEET EMBED
+
+justify-content: flex-end; (goes bottom of this row)
+
+
+72) ALIGN ELEMENTS USING THE ALIGN-ITEMS PROPERTY
+
+** CROSS AXIS, THSES AXIS ARE OPP IF YOY ARE USING COLUMN INTSEAD OF ROW
+STRETCH LINE WILL STRETCH THE ITEM TO FILL CONTAINER
+BASE LINE WILL ALIGN ITEMS TO THIER BASE LINES
+
+
+73)USE THE ALIGN-ITEMS PROPERTY IN THE TWEET EMBED
+
+align-items: center;
+
+
+74) USE THE FLEX-WRAP PROPERTY TO WRAP A ROW OR COLUMN
+** by default the flex container will fit all flex together
+
+flex-wrap: wrap; or (wrap reverse)
+
+
+75) USE THE FLEX-SHRINK PROPERTY TO SHRINK ITEMS
+
+** THE flex shrink property is applied to flex items instead flex container,it allows items to shrink if the flex container is too small. 
+
+box1 = flex-shrink: 1;
+box2 =flex-shrink: 2;
+
+means this box 2 is 2 times smaller than 1
+
+
+
+
+76) USE THE FLEX-GROW PROPERTY TO EXPAND ITEMS
+
+**OPP TO FLEX SHRINK
+
+flex-grow: 1; for box 1
+flex-grow: 2; for box 2
+
+
+
+77)USE THE FLEX-BASIS PROPERTY TO SET THE INITIAL SIZE OF AN ITEM
+** flex basis property used to specify initial size of the item before css makes adjustments with shrinks or flex grow.
+
+
+flex-basis: 10em; for box1
+flex-basis: 20em; for box2
+
+78)  USE THE FLEX SHORTHAND PROPERTY
+flex property is the shortcut for all shrink grow and basis
+
+ 
+flex: 0 1 auto:   (default)
+
+0=grow
+1=shrink
+auto=basis
+
+flex: 1 1 150px; for box=1
+flex: 2 2 150px; for box=2
+
+
+79) USE THE ORDER PROPERTY TO REARRANGE ITEMS
+** order property acn be used to rearrange items
+
+#box-1 {
+background-color: dodgerblue;
+width: 50%;
+height: 50%;
+order: 2;
+}
+
+#box-2 {
+background-color: orangered;
+width: 50%;
+height: 50%;
+order: 1;
+}
+
+
+
+
+
+
+80) USE THE ALIGN-SELF PROPERTY
+** it should be mentained in the parent container.
+
+#box-1 {
+background-color: dodgerblue;
+width: 50%;
+height: 50%;
+align-self: center;
+}
+
+#box-2 {
+background-color: orangered;
+width: 50%;
+height: 50%;
+align-self: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
