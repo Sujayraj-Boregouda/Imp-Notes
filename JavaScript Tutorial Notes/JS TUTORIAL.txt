@@ -1,0 +1,4902 @@
+// IN LINE COMMENT
+/* MULTI LINE COMMENT
+
+1) DATA TYPE AND VARIABLES:
+JS PROVIDES 7 DIFFERENT TYPES DATA
+UNDEFINED= HASNT DEFINED
+NULL= NOTHING
+BOOLEAN= TRUE OR FALSE
+STRING= ANY SORT OF TEXT
+SYMBOL= PRIMITIVE VALUE WHICH IS UNIQUE
+NUMBER= ANY SORT OF NUMBER
+OBJECT= LOT OF DIFF KEY VALUE
+
+often we set data into variable, variable allows computer to store and manipulate data,in a dynamic fashion. 
+its basically a label point to the data.
+variables are like a box, we can fill withn anything.
+there are 3 WAYS TO DECLARE VARIABLE.o declare variable
+ A)var myName ="BEAU"
+
+ myName=8
+
+ B ) let ourName= "freecodecamp"
+
+ c) const pi=3.14
+
+diff is 
+var is going to be used through fall program
+let can be only be used in the scope when we declare that
+const is  variable that never change. if you try to change then you will get error
+ 
+
+
+
+
+
+
+2) STORING VALUES WITH ASSIGNMENT OPERATOR
+DECLARING VARIABLES (var a;)
+ASSIGNING VARIABLES (var b=2;)
+=SIGN IS ASSIGNMENT OPERATOR
+
+console.log allows us to see things in console,
+
+
+
+
+
+
+3) INITIALIZING VARIABLES WITH ASSIGNMENT OPERATOR
+EX: var a=9;
+
+
+4) UNINITIALIZED VARIABLES
+that means the value is undefined means we have not set it to anything
+
+// Initialize these three variables
+ var a=5;
+ var b=10:
+ var c= " I am a"
+
+// do not change code below this line
+
+a=a+1;         = 6
+b=b+5;	       =15
+c=c+"string!"; = i am a string
+
+
+
+
+5) CASE SENSITIVITY IN VARIABLES
+
+USE CAMELCASE
+// 1ST LETTER IS SMALLAND 2ND LETTER IS CAPITAL //
+DECLARATIONS AND ASSIGNMENT BOTH SHOULD MATCH
+
+// DECLARATIONS
+    var studlyCapVar;
+    var properCamelCase;
+    var titleCaseOver;    
+
+// ASSIGNMENTS
+    var studlyCapVar =10;
+    var properCamelCase ="A String";
+    var titleCaseOver =9000;  
+
+
+6) ADDING NUMBERS
+  var sum = 10+10;
+  console.log(sum)
+
+7) SUBSTRACTING NUMBERS
+ var difference = 45-33;
+  console.log(difference)
+
+8) MULTIPLYING NUMBERS
+   var product = 8*10;
+    console.log(product)
+
+9) DIVIDING NUMBERS
+  var quotient = 66/33;
+console.log(quotient)
+
+10) INCREMENTING NUMBERS
+    
+TO INCREMENT A NUMBER MEANS TO ADD 1 TO IT.
+
+var myVar =87;
+
+// only change code below this line
+
+myVar = myVar +1;
+
+**another way
+myVar++;
+
+
+
+
+
+11) DECREMENTING NUMBERS
+var myVar =11;
+
+// only change code below this line
+
+myVar = myVar -1;
+
+**another way
+myVar--;
+
+
+
+12) DECIMAL NUMBERS
+REFERED AS FLOATING POINT NUMBERS OR FLOATS
+ANYTHING HAS POINT IN IT IS A DECIMAL POINT NUMBER
+
+var ourDecimal = 5.9;
+
+// only change code below this line
+
+var myDecimal = 0.009;
+
+
+13) MULTIPLY DECIMALS
+var product = 2.0*2.5;
+
+14) DIVIDE DECIMALS
+var quotient = 4.4/2.0;
+
+
+15) FINDING A RAMAINDER
+ var remainder;
+ remainder = 11%3;
+
+
+if you divide the number by two and remainder is zero then the number is even.
+  
+
+16) COMPOUND ASSIGNMENT WITH AUGMENTED ADDITION
+
+// Initialize these three variables
+ var a=3;
+ var b=17;
+ var c=12;
+
+// only modify code below this line
+
+a=a+12;
+b=9+b;	       
+c=c+7;
+
+or we can write
+
+a += 12;
+b += 9;	       
+c += 7;
+
+
+
+17) COMPOUND ASSIGNMENT WITH AUGMENTED SUBSTRACTION
+
+// Initialize these three variables
+ var a = 3;
+ var b = 17;
+ var c = 12;
+
+// only modify code below this line
+
+a = a - 12;
+b = 9 - b;	       
+c = c - 7;
+
+or we can write
+
+a -= 12;
+b -= 9;	       
+c -= 7;
+
+
+
+18) COMPOUND ASSIGNMENT WITH AUGMENTED MULTIPLICATION
+
+// Initialize these three variables
+ var a = 5;
+ var b = 12;
+ var c = 4.6;
+
+// only modify code below this line
+
+a = a * 5;
+b = 3 * b;	       
+c = c * 10;
+
+or we can write
+
+a *= 5;
+b *= 3;	       
+c *= 10;
+
+
+
+19) COMPOUND ASSIGNMENT WITH AUGMENTED DIVISION
+
+// Initialize these three variables
+ var a = 5
+ var b = 12;
+ var c = 4.6;
+
+// only modify code below this line
+
+a = a / 5;
+b = 3 / b;	       
+c = c / 10;
+
+or we can write
+
+a /= 5;
+b /= 3;	       
+c /= 10;
+
+
+
+20) DECLARE STRING VARIABLES
+
+//example
+
+var firstName = "Alan"
+var lastName = "Turing" 
+
+// only change code below this line
+
+var myfirstName = "Beau"
+var myLastName = "Carnes" 
+
+
+
+21) ESCAPING LITERAL QUOTES IN STRINGS 
+\escp character to put before quotation marks
+means no longer last character
+var myStr = "I am a \"double quoted\" string inside \"double quotes"";
+ 
+console.log(myStr)
+** it will show like this
+
+"I am a "double quoted" string inside "double quotes""
+
+** if not done then it will show like this
+
+"I am a "
+
+
+
+22) QUOTING STRINGS WITH SINGLE QUOTES
+   var myStr = "<a href=\"http://www.example.com\" target=\"_blank\">link</a>;
+
+or
+
+var myStr = '<a href="http://www.example.com" target="_blank">link</a>';
+
+** single' can also be used to escape instead of \ or we can alos use back text `` at beginging and ending.
+ by doing so we can use both single & Double quote
+
+var myStr = `"<a href="http://www.example.com" target="_blank">link</a>"`;
+
+
+
+
+23) ESCAPE SEQUENCE IN STRINGS
+
+/*****
+CODE OUTPUT
+
+\' single quote
+
+\" double quote
+
+\\ backslash
+
+\n newline
+
+\r carriage return
+
+\t tab
+
+\b backspace
+
+\f form feed
+*****/
+   
+
+var myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+** first line then , new line, tab, then second line, then third line.
+
+
+
+
+24) CONCATENATING STRINGS WITH PLUS OPERATOR
+
+// example
+
+var ourStr = "I come first. " " + "I come second.";
+
+// only change code below this line
+
+var myStr = "This is the start. " + "This is the end."
+
+
+**if we console means we get
+console.log(myStr);
+
+"This is the start. This is the end."
+
+
+
+25) CONCATENATING STRINGS WITH PLUS EQUAL OPERATOR
+
+//example
+
+var ourStr = "I come first. ";
+ourStr += "I come second. ";
+
+// only change code below this line 
+
+var myStr = " This is the first sentence. ";
+myStr += "This is the second sentence. ";
+
+console.log(myStr);
+
+"This is the first sentence. This is the second sentence."
+
+
+
+
+26) CONSTRUCTING STRINGS WITH VARIABLES
+
+// example
+
+var ourName = " freecodecamp";
+var ourStr = " Hello, our name is " + our name + ", how are you?";
+
+**means "Hello, our name is freecodecamp, how are you?"
+
+// only change code below this line 
+
+var myName = "Beau";
+var myStr = "My name is " + my name + " and I am well!";
+console.log(myStr)
+
+** we get 
+
+"My name is Beau and I am well!" 
+
+
+
+
+27) APPENDING VARIABLES TO STRINGS
+
+
+// Exaample 
+
+var anAdjective ="awesome!";
+var ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+
+** means
+
+freecodecamp is awesome
+
+// Only change code below this line
+
+var someAdjective = "worthwhile"
+var myStr = "Learning to code is ";
+myStr += someAdjective;
+
+**means
+Learning to code is worthwhile
+
+
+
+
+28) FIND LENGTH OF STRING
+
+// Example
+
+var firstNameLength = 0;
+var firstName = "Ada";
+
+
+firstNameLength = firstName.Length;
+
+//Setup
+var lastNameLength = 0;
+var lastName = "LoveLace";
+
+// Only change code below this line.
+
+lastNameLength = lastName.length;
+
+**If we console means we get
+console.log(lastNameLength);
+
+we get 8
+
+
+29) BRACKET NOTATION TO FIND FIRST CHARACTER IN STRING
+way to get a character index in a string
+
+// Example
+
+var firstLetterOfFirstName = "";
+var firstName = "Ada";
+
+
+firstLetterOfFirstName = firstName[0];
+
+//Setup
+
+var firstLetterOfLastName = "";
+var lastName = "LoveLace";
+
+// Only change code below this line.
+
+firstLetterOfLastName = lastName[0];
+
+**If we console means we get
+console.log(firstLetterOfLastName)
+
+"l"
+
+because computer begins its counting from zero.
+
+
+
+
+
+
+30) STRING IMMUTABILITY
+
+MEANS THEY CANNOT BE ALTERED ONCE CREATED, DOESNT MEAN CANNOT BE CHANGED 
+BUT INDIVIDUAL CHARCTER CANNOT BE CHANGED
+
+
+// setup
+var myStr = "Jello World";
+
+
+// Only change code below this line
+
+myStr[0] = "H"; // Fix me 
+
+** if we run this code means we get error
+
+so we need to do
+
+myStr = "Hello World";
+
+
+
+
+
+
+
+31) BRACKET NOTATION TO FIND NTH CHARACTER IN STRING 
+
+// Example
+
+
+var firstName = "Ada";
+var secondLetterOfFirstName = firstName[1];
+
+
+//Setup
+
+var lastName = "LoveLace";
+
+// Only change code below this line.
+
+var thirdLetterOfLastName = lastName[2];
+
+
+
+32) BRACKET NOTATION TO LAST CHARACTER IN STRING
+
+ // Example
+
+
+var firstName = "Ada";
+var lastLetterOfFirstName = firstName[firstName.length - 1] ;
+
+
+//Setup
+
+var lastName = "LoveLace";
+
+// Only change code below this line.
+
+var lastLetterOfLastName = lastName[lastName.length-1];
+
+
+33) BRACKET NOTATION TO FIND NTH TO LAST CHARACTER IN STRING 
+
+
+/ Example
+
+
+var firstName = "Ada";
+var thirdToLastLetterOfFirstName = firstName[firstName.length-3];
+
+
+//Setup
+
+var lastName = "LoveLace";
+
+// Only change code below this line.
+
+var secondToLastLetterOfLastName = lastName[lastName.length-2];
+
+
+
+34) WORD BLANKS
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+// your code below this line
+
+var result = "";
+
+result += "The" + myAdjective + " " + myNoun + " "+ myVerb + " to the store " + myAdverb
+
+// your code above this line
+
+return result;
+
+}
+
+
+
+// change the words here to test function
+
+console.log(wordBlanks("dog", "big", "ran", "quickly"));
+console.log(wordBlanks("bike", "slow", "flew", "slowly"));
+
+
+we get
+
+
+The Big dog ran to the store quickly.
+The slow bike flew to the store slowly.
+
+
+
+
+
+35) STORE MULTIPLE VALUES WITH ARRAYS
+
+arrays allow to store several piece of data in one place.
+arrays always start with the bracket and end with the bracket.
+every element in the array is separated by the comma, 
+in the e firt element is the string and second element is the number.we can use any type of data.
+
+
+//Example
+
+var ourArray = ["John", 23];
+
+
+// Only change code below this line.
+
+
+var myArray = ["quincy", 1];
+
+
+
+36) NESTED ARRAYS 
+when one of the element in array is another array that is called nested array or a multi-dimensional array.
+
+
+//Example
+
+var ourArray = [["the universe", 42], ["everything", 101010]];
+
+
+// Only change code below this line.
+
+
+var myArray = [["Bulls", 23], ["string", 66]];
+
+
+
+
+
+37) ACCESS ARRAY DATA WITH INDEXES
+
+//Example
+
+var ourArray = [50,60,70];
+var ourData = ourArray[0]; // equals 50
+
+
+// setup
+
+var myArray = [50,60,70]; ***means 0=50, 1=60, 2=70.
+
+
+// Only change code below this line.
+
+var myData = myArray[2];
+
+if we console we get console.log(myData) we get 70..
+
+
+
+
+38) MODIFY ARRAY DATA WITH INDEXES
+
+ we were not able to modify a string using bracket notation. but with arrays you can.
+
+//Example
+
+var ourArray = [18,64,99];
+
+ourArray[1] = 45; // ourArray now equals [18, 45, 99].
+
+
+// setup
+
+var myArray = [18,64,99];
+
+
+// Only change code below this line.
+
+myArray[0] = 45;
+
+if we console we get
+
+console.log(myArray) we get [45, 64, 99]
+
+
+
+
+
+
+
+
+39) ACCESS MULTI-DIMENSIONAL ARRAYS WITH INDEXES
+*** to access arrays in array we use double bracket
+1st bracket indicates the set which we want
+2nd bracket indicates the particular element in the bracket
+// Setup
+
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+
+// Only change code below this line.
+
+var myData = myArray [0][0]; 
+
+
+if we want the number to get 8 means.
+
+
+var myData = myArray [2][1]
+
+console.log(myData);
+
+
+
+
+40) MANIPULATE ARRAYS WITH PUSH ()
+
+** PUSH THE NEXT ELEMENT IN THE ARRAY TO FORM ANATHER ARRAY
+
+var ourArray = ["Stimpson", "J", "cat"];
+
+ourArray.push(["happy", "joy"]);
+
+//ourArray now equals ["Stimpson", "J", "cat", ["happy", "joy"]]
+
+
+//Setup
+
+var myArray = [["John", 23], ["cat", 2]];
+
+
+// Only change code below this line.
+
+
+myArray.push(["dog", 3]);
+
+now 
+
+//myArray now equals  [["John", 23], ["cat", 2, ["dog", 3]];
+
+
+
+
+
+
+41) MANIPULATE ARRAYS WITH POP()
+
+** we can remove an item from an array using pop function.
+** removes the last element inside the final element.
+
+
+//Example
+
+var ourArray = [1,2,3];
+
+var removedFromOurArray = ourArray.pop();
+
+// removedFromOurArray now equals 3, and ourArray now equals [1,2]
+
+
+// Setup
+
+var myArray = [["John", 23], ["cat", 2]];
+
+
+// Only change code below this line.
+
+var removedFromMyArray = myArray.pop();
+
+console.log(myArray)
+
+we get [["John", 23]]
+
+
+
+
+
+
+42) MANIPULATE ARRAYS WITH SHIFT ()
+
+** similar to pop but it removes the FIRST ELEMENT INSIDE THE FINAL ELEMENT
+
+
+
+// Example
+
+var ourArray = ["Stimpson", "J", ["cat"]];
+
+var removedFromOurArray = ourArray.shift();
+
+
+// removedFromOurArray now equals "Stimpsons" and ourArray now equals ["J", ["cat"]]
+
+// Setup
+
+var myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line..
+
+var removedFromMyArray = myArray.shift();
+// removedFromMyArray now equals ["John", 23]  and myArray now equals ["dog", 3]
+
+
+
+43) MANIPULATE ARRAYS WITH UNSHIFT ()
+
+** similar with push function while push adds in the last but unshift adds in the beginning.
+
+// Example
+
+var ourArray = ["Stimpson", "J", "cat"];
+
+ourArray.shift(); // ourArray now equals ["J", "cat"]
+
+ourArray.unshift("Happy");
+
+// ourArray now equals ["Happy", "J", "cat"]
+
+// Setup
+
+var myArray = [["John", 23], ["dog",  3]];
+
+myArray.shift();
+
+
+// Only chnage code below this line.
+
+myArray.unshift(["Paul", 35]);
+
+
+// ourArray now equals ["Paul", "35 ","dog", "3"];
+
+
+
+
+
+
+
+44) SHOPPING LIST
+another ex for nested arrays
+
+var myList = [["cereal", 3], ["milk", 2], ["bananas", 3], ["juice", 2], ["eggs", 12]];
+
+
+
+
+45) WRITE REUSABLE CODE WITH FUNCTIONS
+
+// Example
+
+function ourReusableFunction() {
+console.log("Heyya, world");
+}
+
+ourReusableFunction();
+
+when we console this function as many times we wanted, consolen will display "Heyya, world" as many times.
+
+
+// Only change code below this line
+
+function reusableFunction() {
+console.log("Hi, world");
+}
+
+reusableFunction();
+
+
+console will display
+
+Heyya, World
+Hi world
+
+
+
+
+46) PASSING VALUES TO FUNCTIONS WITH ARGUMENTS
+
+//Example
+
+
+function ourFunctionWithArgs(a, b) {
+console.log(a-b);
+}
+
+ourFunctionWithArgs(10, 5); // Output 5
+
+// Only change code below this line
+
+function functionWithArgs(a, b) {
+console.log(a+b);
+}
+
+functionWithArgs(10, 5)
+
+if we console we get
+5
+15
+
+
+
+
+47) GLOBAL SCOPE AND FUNCTIONS
+
+** scope refers to visibility of variables.
+variables which are defined outside the function block are global scope.
+global scope mean they can be seen everywhere in javascript.
+
+!= means does not equal 
+
+
+
+// Declare your variable here
+
+
+var myGlobal = 10;
+
+function fun1() {
+
+// Assign 5 to oopsGlobal Here
+
+oopsGlobal = 5;
+
+}
+
+
+// Only change code above this line
+
+function fun2() {
+
+var output = "";
+
+if (typeof myGlobal != "undefined") {
+output += "myGlobal: " + myGlobal;
+}
+
+if (typeof oopsGlobal != "undefined") {
+output += " oopsGlobal: " + oopsGlobal;
+}
+
+console.log(output);
+}
+fun();
+fun();
+
+
+
+
+
+
+48) LOCAL SCOPE AND FUNCTIONS
+
+** variables which are declared within the function as well as function parameter have local scope.
+that means they are only visible within the function.
+
+function myLocalScope() {
+
+var myVar =5;
+
+console.log(myVar);
+
+}
+
+myLocalScope();
+
+console.log(myVar);
+
+
+if we access out side the function means we get eror
+ReferenceError: myVar is not defined (/index.js:9)
+
+
+
+49) GLOBAL VS LOCAL SCOPE IN FUNCTIONS
+** it is possible to have both global & local function in same name.
+when we do this local presedent takes over global variable.
+
+
+var outerwear = "T-Shirt"; (it is defined outside the variable hence global variable)
+
+function myOutfit() {
+
+return outerWear;
+}
+
+console.log(myOutfit());
+
+** we get t shirt
+
+or
+
+function myOutfit() {
+ 
+var outerWear = "sweater";
+
+return outerWear;
+}
+
+console.log(myOutfit());
+
+** we get sweater (because sweater is local variable)
+
+
+if we console.log(outerwear); we get t shirt.
+
+
+
+50) RETURN A VALUE FROM A FUNCTION WITH RETURN
+
+
+function minusSeven(num) {
+
+return num - 7;
+}
+
+console.log(minusSeven(10));
+
+we get 3
+
+**
+
+function timesFive(num) {
+
+return num * 5;
+}
+
+console.log(timesFive(5));
+
+
+we get
+25
+
+
+
+
+
+51) UNDERSTANDING UNDEFINED VALUE RETURNED FROM A FUNCTION
+
+** HERE EVEN WE DEFINE RETURN VALUE IT STILL WILL BE UNDEFINED
+
+// Example
+
+var sum = 0;
+
+function addThree() {
+
+sum = sum + 3;
+
+}
+
+function addFive() {
+
+sum += 5;
+} 
+
+if we log out this will get undefined.
+
+
+
+
+52) ASSIGNMENT WITH A RETURNED VALUE
+
+var changed = 0;
+
+
+function change(num) {
+
+return (num + 5) / 3;(this value will be stored in changed
+
+}
+
+changed = change(10);
+
+
+**
+
+
+var processed = 0;
+
+function processArg(num) {
+
+return (num + 3) / 5;
+
+}
+
+**above value will be stored in processed below
+
+processed = processArg(7);
+
+
+
+
+
+53) STAND IN LINE
+** in computer science queques are pefect data structure or in order
+
+function nextInLine(arr, item) {
+
+// Your code here
+
+arr.push(item);
+return arr.shift();
+
+}
+
+
+var testArr = [1,2,3,4,5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+**
+
+we get
+Before: [1,2,3,4,5]
+1
+After: [2,3,4,5,6]
+
+
+
+
+54) BOOLEAN VALUES
+
+** another data type it has only 2 types (TRUE/FALSE)
+basically on/off switches 
+they dont use quotation marks
+
+function welcomeToBooleans() {
+return false;
+}
+
+
+
+55) USE CONDITIONAL LOGIC WITH IF STATEMENTS
+** if "if" statement is used to make decision in code
+
+
+//Exmaple
+
+function ourTrueOrFalse(isItTrue) {
+
+if (isItTrue) {
+
+return "yes, it's true";
+}
+return "No, it's false";
+
+
+}
+
+
+console.log(trueOrFalse(true));
+
+"Yes, that was true"
+**
+
+
+function trueOrFalse(wasThatTrue) {
+
+if (wasThatTrue) {
+
+return "yes, that was true";
+}
+return "No, that was false";
+
+
+}
+
+
+console.log(trueOrFalse(true));
+
+"Yes, that was true"
+
+** whatever written in (if) will be answer, means if is true then ans will be true vice versa.
+
+
+
+56)COMPARISON WITH THE EQUALITY OPERATOR
+** another operator for true or false.
+
+// Example
+
+function testEqual(val) {
+
+if (val==12) { // Chnage this line(**= sign is assign operator so we use == to indicate equal)
+
+return "Equal";
+ }
+return "Not Equal";
+}
+
+// Change this value to test
+testEqual(10);  
+
+** console.log(testEqual(10));
+
+we get "Not Equal"
+
+
+
+
+
+
+
+57) COMPARISON WITH THE STRICT EQUALITY OPERATOR
+
+** === MEANS STRICT EQUAL SYMBOL
+
+// Example
+
+function testStrict(val) {
+
+if (val===7) { // Change
+
+return "Equal";
+}
+return "Not Equal";
+}
+
+// Change this value to test
+testStrict(7); true
+testStrict("7"); false
+
+
+ /*
+3==3 (true)
+3=== '3' (false) if we use == then it show equal but not === because it evaluates '' symbol also.
+/*
+
+
+
+
+
+
+
+
+58) PRACTICE COMPARING DIFFERENT VALUES
+
+ // Setup
+
+function compareEquality(a, b) {
+
+if (a == b) { // Change this line (** this uses type converter)
+
+return "Equal";
+}
+return "Not Equal";
+}
+
+// Change this value to test 
+console.log(compareEquality(10, "10"));
+
+**we get equal
+
+but
+
+if (a === b) then because of the string we get not equal for the above value.
+
+
+
+59) COMPARISION WITH THE INEQUALITY OPEARATOR
+
+!= MEANS NOT EQUAL SIGN
+
+
+// Setup
+
+function testNotEqual(val) {
+
+if (val != 99) { // Change this line (** this uses type converter)
+
+return " Not Equal";
+}
+return " Equal";
+}
+
+// Change this value to test 
+console.log(testNotEqual(10));
+
+ we get not equal.
+
+
+
+
+60) COMPARISION WITH THE STRICT INEQUALITY OPERATOR
+
+** same as 57 ex
+
+// Setup
+
+function testStrictNotEqual(val) {
+
+// Only change code below this line
+
+if (val !== 17) {
+
+
+// Only change code above this line
+
+return " Not Equal";
+}
+return " Equal";
+}
+
+// Change this value to test 
+console.log(testStrictNotEqual(10));
+
+ we get not equal.
+
+
+
+
+
+
+61) COMPARISIONS WITH THE LOGICAL AND OPERATOR
+
+function testGreaterThan(val) {
+
+if (val > 100) { // change this line
+return "Over 100";
+}
+
+if (val > 10) { // change this line
+return "Over 10";
+}
+
+return "10 or under";
+
+// change this value to test
+
+console.log(testGreaterThan(10));
+
+we get "10 or under"
+
+
+
+
+
+
+
+62)COMPARISIONS WITH THE GREATER THAN OR EQUAL TO OPERATOR
+
+
+function testGreaterOrEqual(val) {
+
+if (val >= 20) { // change this line
+return "20 or Over";
+}
+
+if (val >= 10) { // change this line
+return "10 or over";
+}
+
+return "less than 10";
+
+// change this value to test
+
+console.log(testGreaterOrEqual(10));
+
+we get "10 or over"
+
+
+
+63)COMPARISIONS WITH THE LESS THAN OPERATOR
+
+function testLessThan(val) {
+
+if (val < 25) { // change this line
+return "Under 25";
+}
+
+if (val < 55) { // change this line
+return "Under 55";
+}
+
+return "55 or Over";
+
+// change this value to test
+
+console.log(testLessThan(10));
+
+(** observation is trick is which symbol is less than which symbol is more than, less than symbol looks like letter l. 1st letter in the less , but opp in more than symbol.
+
+
+
+
+
+64) COMPARISIONS WITH THE LESS THAN OR EQUAL TO OPERATOR
+
+function testLessOrEqual(val) {
+
+if (val <= 12) { // change this line
+return "Smaller Than or Equal to 12";
+}
+
+if (val <= 24) { // change this line
+return "Smaller Than or Equal to 24";
+}
+
+return "more than 24";
+
+// change this value to test
+
+console.log(testGreaterOrEqual(10));
+
+we get "Smaller Than or Equal to 12"
+
+
+
+
+65) COMPARISONS WITH THE LOGICAL AND OPERATOR
+
+** sometimes we check two things are true at the same time.
+
+
+function testlogicalAnd(val) {
+
+// only change code below this line
+
+if (val <=50 && val >= 25) {
+return "yes";
+}
+
+// only change code above this line
+return "No";
+}
+
+// change this value to test
+testLogicalAnd(10);
+
+
+**instead of using below method we should prefer above method.
+ if (val <= 50) {
+if (val >=25) {
+return "yes";
+
+
+
+
+66) COMPARISONS WITH THE LOGICAL OR OPERATOR
+
+|| OR SYMBOL
+
+
+function testlogicalOr(val) {
+
+// only change code below this line
+
+if (val < 10 || val > 20) {
+return "Outside";
+}
+
+// only change code above this line
+return "Inside";
+}
+
+// change this value to test
+testLogicalOr(15);
+
+
+
+
+67) ELSE STATEMENTS
+
+**  to address multiple conditions
+
+
+function testElse(val) {
+
+var result = "";
+
+// only change code below this line
+
+if (val > 5) {
+result = "Bigger than 5";
+} else {
+result = "5 or smaller";
+
+// only change code above this line
+return result;
+}
+
+// change this value to test
+testElse(4);
+
+
+68) ELSE IF STATEMENTS
+
+**  to address multiple conditions
+ITS THE WAY OF CHANGING IF STATEMENTS TOGETHER
+
+function testElseIf(val) {
+
+if (val > 10) {
+return "Greater than 10";
+}
+
+if (val < 5) {
+return "Smaller than 5";
+}
+return "Between 5 and 10";
+}
+
+
+// change this value to test
+testElseIf(7);
+
+
+** instead using this above step we can use below statements
+
+function testElseIf(val) {
+
+if (val > 10) {
+return "Greater than 10";
+} else if (val < 5) {
+return "Smaller than 5";
+} else {
+return "Between 5 and 10";
+}
+
+}
+
+// change this value to test
+testElseIf(7);
+
+
+
+
+
+
+69) LOGICAL ORDER IN IF ELSE STATEMENTS
+
+** when you are using else if statement order is very important
+** it checks the fist condition, if its true then it doesnt care about second condition.
+if we put (10) 1st and (5) 2nd means , if we console number 3 means it will show less than 10 instead of showing less than 5.
+
+
+
+function orderMyLogic(val) {
+
+if (val < 5) {
+return "Less than 5";
+} else if (val < 10) {
+return "less than 10";
+} else {
+return "Greater than or equal to 10";
+}
+
+}
+
+// change this value to test
+console.log(orderMyLogic(3));
+
+
+
+console
+less than 10.
+
+
+70) CHAINING IF ELSE STATEMENTS
+** CONDITION IS ALWAYS IN PRANTACIS ()
+
+function testSize(num) {
+if (num < 5) {
+return "Tiny"
+} else if (num < 10) {
+return "small"
+} else if (num < 15) {
+return "medium"
+} else if (num < 20) {
+return "large"
+} else {
+return "huge"
+}
+}
+
+console.log(testSize(7));
+
+
+
+71) GOLF CODE
+
+var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home"]
+
+
+function golfScore(par, strokes) {
+if (strokes == 1) {
+return names[0]
+}  else if (strokes <= par - 2) {
+return names[1]
+}  else if (strokes == par - 1) {
+return names[2]
+}  else if (strokes <= par ) {
+return names[3]
+}  else if (strokes == par + 1) {
+return names[4]
+}  else if (strokes == par + 2) {
+return names[5]
+}  else if (strokes >= par + 3) {
+return names[6]
+
+}
+
+}
+
+
+
+
+// change these values to test
+
+golfScore(5,4);
+
+/*
+
+STROKES  			RETURN
+
+1			"Hole-in-one!"
+
+1
+
+<= par - 2
+
+par - 1
+
+par
+
+par + 1
+
+par + 2
+
+
+
+
+
+
+
+
+72) SWITCH STATEMENTS
+
+** instead using chained statements use switch statements.
+
+function caseInSwitch(val) {
+var answer = "";
+
+switch(val) {
+case 1:
+answer = "alpha";
+break;
+case 2:
+answer = "beta";
+break;
+case 3:
+answer = "gamma";
+break;
+case 4:
+answer = "delta";
+break;
+}
+return answer;
+}
+
+// change this value to test
+console.log(caseInSwitch(2))
+we get "beta"
+** if you dont use break statement then it will run to next case automatically.
+
+
+
+
+
+
+
+73) DEFAULT OPTION IN SWITCH STATEMENTS
+
+** default option is kind of like else
+
+function switchOfStuff(val) {
+var answer = "";
+
+switch(val) {
+case "a":
+answer = "apple";
+break;
+case "b":
+answer = "bird";
+break;
+case "c":
+answer = "stuff";
+break;
+default:
+answer = "stuff";
+break;
+
+}
+
+return answer;
+
+}
+
+
+// change this value to test
+
+console.log(caseInSwitch(d))
+
+** if any value other than a/b/c is passed then it will show empty string "" because var answer = ""; is assigned.
+to avoid that we use default.
+
+
+
+
+
+
+
+
+74) MULTIPLE IDENTICAL OPTIONS IN SWITCH STATEMENTS
+
+** sometimes we need to switch statements when multiple inputs gives the same amount.
+
+
+function sequentialSizes(val) {
+var answer = "";
+switch(val) {
+case 1:
+case 1:
+case 1:
+answer = "low";
+break;
+case 4:
+case 5:
+case 6:
+answer = "mid";
+break;
+case 7:
+case 8:
+case 9:
+answer = "high";
+break;
+}
+ 
+// change this value to test
+
+console.log(sequentialSizes((1);
+
+we get low
+
+
+
+
+75) REPLACING IF ELSE CHAINS WITH SWITCH
+
+** sometimes switch statement is more easy to write & reading than chain of else and if else.
+
+
+
+
+function functionToSwitch(val) {
+var answer = "";
+// only change code below this line
+
+if (val === "bob") {
+answer = "marley";
+} else if (val === 42) {
+answer = "The answer";
+} else if (val === 1) {
+answer = "There is no #1";
+} else if (val === 99) {
+answer = "Missed me by this much!";
+} else if(val === 7) {
+answer = "Ate Nine";
+}
+
+// only change code above this line
+
+return answer;
+}
+
+
+** we should not use above method instead we need to use this below method.
+
+var answer = "";
+// only change code below this line
+
+switch(val) {
+case "bob":
+answer = "marley";
+break;
+case 42:
+answer = "The answer";
+break;
+case 1:
+answer = "There is no #1";
+break;
+case 99:
+answer = "Missed me by this much!";
+break;
+case 7:
+answer = "Ate Nine";
+break;
+
+
+like this we can change the chain of if else statement to switch statements.
+
+// only change code above this line
+
+return answer;
+}
+
+
+
+
+
+
+
+  
+76) RETURNING BOOLEAN VALUES FROM FUNCTIONS
+
+
+function isLess(a, b) {
+
+// Fix this code
+
+if (a < b) {
+
+return true;
+} else {
+return false;
+}
+}
+
+// change these values to test
+
+console.log(isLess(10, 15))
+
+
+***** instead we should do
+
+function isLess(a, b) {
+
+// Fix this code
+
+return a < b {
+
+
+// change these values to test
+
+console.log(isLess(10, 15))
+
+we get true.
+
+
+console.log(isLess(20, 15))
+
+we get false.
+
+
+
+
+
+
+77) RETURNING EARLY PATTERN FROM FUNCTIONS
+
+// setup
+
+function abTest(a, b) {
+// only change code below this line
+
+if (a < 0 || b < 0) {
+return undefined;
+}
+
+
+// only change code above this line
+
+return Math.round(Math.pow(Math.sqrt(a)+ Math.sqrt(b), 2));
+
+// change values below to test your code.
+console.log(abTest(2,2));
+
+
+
+
+
+78) COUNTING CARDS
+
+*****
+low card the count goes up 
+middle value card the count stays the same
+high card the count goes down
+when the count is +ve the player should bet high
+when the count is zero or -ve the player should bet low
+you can use many ways to write this if else or many ways , program should work however
+
+
+var count = 0;
+
+function cc(card) {
+switch(card) {
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+	count++; (++ means it increments one)(if case is 2/3/4/5/6 we gonna add)
+	break;					if case is 7/8/9 we gonna do nothing
+case 10:					if case is 10/j/q/k/a we gonna sub
+case "J":
+case "Q":
+case "K":
+case "A":
+		count--; (-- means minus one)
+		break;
+}
+
+var holdbet = 'Hold'
+if (count > 0) {
+holdbet = 'bet'
+}
+
+
+
+
+return count + " " + holdbet;
+
+}
+
+cc(2); cc(3); cc(7); cc('k'); cc('a');
+console.log(cc(4))
+we get 1 bet
+
+
+cc(2); cc(k); cc(10); cc('k'); cc('a');
+console.log(cc(4))
+we get - 2 hold
+
+
+
+
+
+
+79) BUILD JAVASCRIPT OBJECTS
+similar to arrays but instead of using indexes it uses property
+everything before the colons : is called properties
+anything after the colons : is called as values
+properties might be any data numbers/ strings/ arrays or any data type.
+
+
+// Example
+
+var ourDog = {
+"name":"camper",
+"legs": 4,
+"tails": 1,
+"friends": ["everything"!]
+};
+
+// only change code below this line.
+
+var myDog = {
+
+"name":"quincy",
+"legs": 3,
+"tails": 2,
+"friends": []
+};
+
+like this we can create our own object..
+
+
+
+
+
+
+80) ACCESSING OBJECT PROPERTIES WITH DOT NOTATION
+**there are 2 main ways to access a property on an object.
+a) dot notation
+B) bracket notation 
+
+// setup
+
+var testObj = {
+"hat": "ballcap",
+"hat": "ballcap",
+"hat": "ballcap",
+};
+
+
+// only change code below this line.
+
+
+var hatValue = testObj.hat;
+
+var shirtValue = testObj.shirt;
+
+
+
+
+81) ACCESSING OBJECT PROPERTIES WITH BRACKET NOTATION
+** you can use bracket notation any time but it is required if the name has space in it.
+
+// setup
+
+var testObj = {
+"an entree": "hamburger",
+"my side": "veggies",
+"the drink": "water",
+};
+
+
+// only change code below this line.
+
+
+var entreeValue = testObj["an entree"];
+
+var drinkValue = testObj['the drink'];
+
+** both "" & '' can be used to mention
+
+
+
+82) ACCESSING OBJECT PROPERTIES WITH VARIABLES
+
+** BRACKET PROPERTIES ARE ALSO BE USED LOOK UP OBJECT PROPERTIES USING VARIABLES
+
+// setup
+
+
+var testObj = {
+12: "Namath",
+16: "Montana",
+19: "Unitas",
+};
+
+
+// only change code below this line.
+
+
+var playerNumber = 16;
+
+var player = testObj[playerNumber];
+
+
+
+
+83) UPDATING OBJECT PROPERTIES
+
+// Example
+
+var ourDog = {
+"name":"camper",
+"legs": 4,
+"tails": 1,
+"friends": ["everything"!]
+};
+
+ourDog.name = "happy camper";
+
+//setup
+
+var myDog = {
+
+"name":"coder",
+"legs": 4,
+"tails": 1,
+"friends": ["freecodecamp campers"]
+};
+
+// only change code below this line
+
+myDog.name = "happy coder";
+
+
+** BY DOING THIS WE CAN THE DOG NAME
+
+
+
+
+
+84) ADD NEW PROPERTIES TO AN OBJECT
+
+// Example
+
+var ourDog = {
+"name":"camper",
+"legs": 4,
+"tails": 1,
+"friends": ["everything"!]
+};
+
+ourDog.bark = "bow wow";
+
+//setup
+
+var myDog = {
+
+"name":"coder",
+"legs": 4,
+"tails": 1,
+"friends": ["freecodecamp campers"]
+};
+
+// only change code below this line
+
+myDog.['bark'] = "woof!"
+
+
+** BY DOING THIS WE CAN add new property
+
+
+
+
+85) DELETE PROPERTIES FROM AN OBJECT
+
+
+// Example
+
+var ourDog = {
+"name":"camper",
+"legs": 4,
+"tails": 1,
+"friends": ["everything"!]
+};
+
+delete ourDog.bark;
+
+//setup
+
+var myDog = {
+
+"name":"coder",
+"legs": 4,
+"tails": 1,
+"friends": ["freecodecamp campers"]
+};
+
+// only change code below this line
+
+delete myDog.tails;
+
+
+** BY DOING THIS WE CAN delete properties
+
+
+
+86) USING OBJECTS FOR LOOKUPS
+objects can be taught as key value storage like a dictionary.
+you can use object to look up values
+you can replace switch with the object
+// setup
+
+function phoneticLookup(val) {
+var result = "";
+
+// only change code below this line
+
+switch(val) {
+case"alpha":
+result = "adams";
+break;
+case"bravo":
+result = "boston";
+break;
+case"charlie":
+result = "chicago";
+break;
+case"delta":
+result = "denver";
+break;
+case"echo":
+result = "easy";
+break;
+case"foxtrot":
+result = "frank";
+break;
+}
+
+or
+
+var lookup = {
+"alpha": "adams",
+"bravo": "boston",
+"charlie": "chicago",
+"delta": "denver",
+"echo": "easy",
+"foxtrot": "frank",
+};
+
+result = lookup[val];
+
+// only change code below this line
+
+return result;
+}
+
+// change this value to test
+
+console.log(phoneticLookup("charlie"));
+
+like this we can use object instead switch.
+
+
+
+
+
+87) TESTING OBJECTS FOR PROPERTIES
+
+**hasown used to check whether the object has property or not.
+
+
+// setup
+
+var myObj = {
+gift: "pony",
+pet: "kitten",
+bed: "sleigh",
+};
+
+function checkObj(checkProp) {
+// your code here
+
+if (myObj.hasOwnProperty(checkProp)) {
+return myObj[checkProp];
+} else {
+return "not found"
+}
+}
+
+// test your code by modifying these values
+console.log(checkObj("gift"));
+
+
+
+88) MANIPULATING COMPLEX OBJECTS
+
+** a javascript object is a way to store flexible data.
+any thing between open bracket & close barcket is called as arrays.
+after each element in array you need comma
+var myMusic = [
+{
+"artist": "billy joel",
+"title": "piano man",
+"release_year": 1973,
+"formats": [
+"CD"
+"8T"
+"LP"
+],
+"gold": true
+},
+// add record here (** like this below we can add new element in a object, by putting comma )
+{
+"artist": "beau carnes",
+"title": "cereal man",
+"release_year": 2003,
+"formats": [
+"youtube video"
+]
+
+
+
+
+89) ACCESSING NESTED OBJECTS
+
+** in order to acces sub properties of the object, you can together the dot or chain notation
+** if we have space in the content then yoy have to use bracket notations.
+// setup
+var myStorage = {
+"car": {
+"inside": {
+"glove box": "maps",
+"passenger seat": "crumbs"
+},
+"outside": {
+"trunk": "jack"
+}
+}
+};
+
+
+var gloveBoxContents = myStorage.car.inside["glove box"]; // change this line]
+we get maps
+
+
+
+
+90) ACCESSING NESTED ARRAYS
+
+array barcket notation can be changed to access nested arrays
+
+
+
+// setup
+
+var myPlants = [
+{
+type: "flowers",
+list: [
+"rose"
+"tulip"
+"dandelion"
+]
+},(** comma means  new element)
+{
+type: "trees",
+list: [
+"fir",
+"pine",
+"birch"
+]
+}
+};
+
+// only change code below this line
+
+var secondTree = myPlants[1].list[1];
+
+we get pine
+
+
+
+91) RECORD COLLECTION
+
+** IF THE VALUE IS SET TO BLANK THEN IT WILL BE DELETED PROPERTY
+if we have empty string in the value then it should bee completely delete that property.
+
+// setup
+
+var collection = {
+"2548": {
+"album":"slippery when wet",
+"artist":"bon javi",
+"tracks": [
+"let it rock",
+"you give love a bad name"
+]
+},
+"2468": {
+"album":"1999",
+"artist":"prince",
+"tracks": [
+"1999",
+"little red corvette"
+]
+},
+"1245": {
+"artist":"robert palmer",
+"tracks": []
+},
+"5439": {
+"album":"abba gold",
+}
+},
+
+// keep a copy of the collection for tests
+
+var collectionCopy = JSON.parse(JSON.stringify(collection));
+
+// only change code below this line
+
+function updateRecords(id, prop, value) {
+
+if (value === "") {
+delete collection[id][prop];
+} else if (prop === "tracks") {
+collection[id][prop] = colection[id][prop] || [];
+collection[id][prop].push(value);
+} else {
+collection[id][prop] = value;
+}
+
+return collection;
+}
+// alter values below to test your code
+
+updateRecords(2468, "tracks", "test");
+console.log(updateRecords(5439, "artist", "abba"));
+
+
+
+
+92) ITERATE WITH WHILE LOOPS
+
+** loops allow you to run the same code multiple times
+while loop runs untill a specfied condition is true and stops when the specified is false.
+
+var myArray = [];
+
+var i = 0;
+
+while (i < 5) {
+myArray.push(i);
+i++; (***** to end the while loop it will increment i)
+}
+
+
+console.log(myArray);
+
+we get [0,1,2,3,4]
+
+
+
+93) ITERATE WITH FOR LOOPS
+
+most common type of loop in javascript.
+i++ means at the end of each ireration we gonna increment i
+initialization = happens before any of the code run
+condition
+iteration/ below ex has 3 types after for loop
+
+
+// example
+
+var ourArray = [];
+
+for (var i = 0; i < 5; i++) {
+ourArray.push(i);
+}
+
+//setup
+
+var myArray = [];
+
+// only change code below this line.
+
+for (var i = 1; i < 6; i++) {
+
+ourArray.push(i);
+}
+
+console.log(myArray);
+
+we get [1,2,3,4,5]
+
+we iterated by diff times & each item we pushed a new digit on to the array,. in at the end of each iteration we incremented i so it pushed a larger number in to the array.
+
+
+
+
+
+94) ITERATE ODD NUMBERS WITH A FOR LOOP
+
+incrementing by 2 to get even & odd
+
+
+// example
+
+var ourArray = [];
+
+for (var i = 0; i < 10; i += 2) {
+ourArray.push(i);
+}
+
+console.log(ourArray);
+we get [0,2,4,6,8]
+
+//setup
+
+
+var myArray = [];
+
+
+// only change code below this line.
+
+
+for (var i = 1; i < 10; i += 2) {
+myArray.push(i);
+}
+
+console.log(myArray);
+we get [1,3,5,7,9]
+
+
+
+95) COUNT BACKWARDS WITH A FOR LOOP
+
+// example
+
+var ourArray = [];
+
+for (var i = 10; i > 0; i -= 2) {
+ourArray.push(i);
+}
+
+console.log(ourArray);
+we get [10,8,6,4,2]
+
+//setup
+
+
+var myArray = [];
+
+
+// only change code below this line.
+
+
+for (var i = 9; i > 0; i -= 2) {
+myArray.push(i);
+}
+
+console.log(myArray);
+we get [9,7,5,3,1]
+
+
+
+96) ITERATE THROUGH AN ARRAY WITH A FOR LOOP
+
+IT IS COMMON IN JAVASCRIPT TO ITERATE CONTENTS THROUGH THE ARRAY
+
+
+
+/ example
+
+var ourArr = [9, 10, 11, 12];
+var ourTotal = 0;
+
+for (var i = 0; i < ourArr.length; i++) {
+ourTotal += ourArr(i);
+}
+
+console.log(ourTotal);
+we get 42
+
+//setup
+
+
+var myArr = [2,3,4,5,6];
+var total = 0;
+
+// only change code below this line.
+
+
+for (var i = 0; i < myArr.length; i++) {
+total += myArr[i];
+}
+
+console.log(total);
+we get 20
+
+
+
+
+97) NESTING FOR LOOPS
+
+if you have a multidimensional or nested array you can use nested for loops to access all the array elements.
+
+i= outer array (ARR.LENGTH ITEATES LENGTH OF 3)
+j= inner array (INSIDE I) 
+
+function multiplyAll(arr) {
+
+var product = 1;
+
+for (var i=0; i < arr.length; i++) {
+
+for(var j=0; j < arr[i].length; j++) {
+
+product *= arr[i][j];
+}
+}
+return product;
+}
+
+var product = multiplyAll([[1,2],[3,4],[5,6,7]]);
+
+
+console.log(product);
+we get 5040 
+
+
+
+
+98) ITERATE WITH DO... WHILE LOOPS
+
+while loop fist checks the condition before running any code within the loop.
+do while loop will always run atleast one time and then it will check the condition.
+
+
+(while loop)
+
+// setup
+
+var myArray = [];
+var i = 10;
+
+// only change code below this line.
+
+while (i < 5) {
+myArray.push(i);
+i++;
+}
+
+console.log(i, myArray);
+we get 10
+
+or
+
+(do while loop  below)
+
+// setup
+
+var myArray = [];
+var i = 10;
+
+// only change code below this line.
+
+ do {
+myArray.push(i);
+i++;
+}while (i < 5)
+
+console.log(i, myArray);(if the condition is false then it will break out of the loop)
+we get 11,[10] now i is 11 & 10 is added to it.
+
+
+
+
+99) PROFILE LOOKUP (CODING CHALLENGE)
+
+// Setup
+
+var contacts = [
+{
+
+"firstaName": "Akira",
+"lastName": "Laine",
+"number": "8543236543",
+"Likes": ["Pizza", "coding", "Brownie Points"]
+},
+{
+
+"firstaName": "Harry",
+"lastName": "Potter",
+"number": "8994372684",
+"Likes": ["Hogwarts", "Magic", "Hagrid"]
+},
+{
+
+"firstaName": "Sherlock",
+"lastName": "Holmes",
+"number": "8487345643",
+"Likes": ["Intriguing Cases", "Violin"]
+},
+{
+
+"firstaName": "Kristian",
+"lastName": "vos",
+"number": "unknown",
+"Likes": ["Javascript", "Gaming", "Foxes"]
+}
+};
+
+
+function lookupProfrile(name, prop) {
+
+for (var i = 0; i < contacts.length; i++) {
+
+if (contacts [i].firstName === name) 
+ 
+return contacts[i][prop] || "No such property";
+}
+}
+return "No such content";
+
+// Change these values to test your function
+
+var data = lookupProfile("Akira", "Likes");
+
+console.log(data);
+
+["pizza", "coding", "brownie points"]
+
+
+
+
+100) GENERATE RANDOM FRACTIONS
+
+to create a random decimal number in javasript
+its with the math.random function
+Math.random can never be 1 it can be zero 
+
+function randomFraction() {
+
+
+return 0;
+
+}
+
+console.log(randomFraction());
+
+
+***or
+
+
+function randomFraction() {
+
+
+return Math.random();
+
+}
+
+console.log(randomFraction());
+
+we get
+
+0.23813741879825767
+
+
+
+101) GENERATE RANDOM WHOLE NUMBERS
+
+means everytime we console we get random diff nubers specified b/w
+
+math.roandom * no we get rounded off  math floor
+
+
+
+ 
+var randomNumberBetween0and19 = Math.floor(Math.random()*20;
+
+
+function randomWholeNum() {
+
+
+return Math.floor(Math.random()* 10; *****(any random no b/w o to 9)
+}
+
+
+console.log(randomWholeNum());
+
+
+
+
+
+102) GENERATE RANDOM WHOLE NUMBERS WITHIN A RANGE
+
+
+// Example
+
+
+function ourRandomRange(ourMin, ourMax) {
+
+return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
+
+}
+
+ourRandomRange(1, 9);
+
+// Only change cod below this line.
+
+function randomRange(myMin, myMax) {
+
+return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+
+}
+
+var myRandom = randomRange(5, 15);
+
+console.log(myRandom);
+
+
+
+
+103) USE THE PARSEINT FUNCTION
+
+it takes a string & returns it to integer
+
+if a string cannot be converted in to the integer. it shows you, nan=not a number.
+
+
+function convertToInteger(str) {
+
+return parseInt(str);
+
+}
+
+convertToInteger("56");
+
+
+
+104) USE THE PARSEINT FUNCTION WITH A RADIX
+
+
+radix specifies base of the number in string
+
+base2=binary
+base10=default
+converts binary into to integer.
+
+function convertToInteger(str) {
+
+return parseInt(str, 2);
+
+}
+
+convertToInteger("10011");
+
+
+
+105) USE THE CONDITIONAL (TERNARY) OPERATOR.(imp)
+
+
+its like one line if else expression.
+
+// condition ? statement-if-true : statement-if-false ; 
+
+
+
+function checkEqual(a, b) {
+
+if(a === b) {
+
+return true;
+
+}
+
+else {
+
+return false;
+
+}
+}
+checkEqual(1, 2);
+
+***** or  
+
+
+insted the long way as the above we use short (ternary opration)
+
+function checkEqual(a, b) {
+
+return a === b ? true : false;
+
+return a === b;
+
+}
+
+checkEqual(1, 2);
+
+** (above both lines have same meaning)
+
+
+
+
+106) USE MULTIPLE CONDITIONAL (TERNARY) OPERATORS
+
+you can nest them with any each other which gives them more power
+
+
+function checkSign(num) {
+
+return num > 0 ? "positive" : num < 0 ? "negative" : "zero" ; 
+
+}
+
+console.log(checkSign(0));
+
+
+** after "positive" everything  is ternary
+
+
+
+
+107) DIFF B/W VAR & LET KEYWORD
+
+before to declare variable you have to use var keyword.
+but after ES6 2015 we can also Let & Const
+let does not let you declare variable twice.
+use strict catches common coding mistakes & takes action.
+
+
+var catName = "Quincy";
+
+var quote;
+
+var catName = "Beau";
+
+function catTalk() {
+
+"use strict";
+
+catName = "Oliver";
+
+quote = catName + " says Meow!";
+
+}
+
+catTalk();
+
+wew dont get anything
+
+
+***** or
+
+let catName = "Quincy";
+
+let quote;
+
+catName = "Beau";
+
+function catTalk() {
+
+"use strict";
+
+catName = "Oliver";
+
+quote = catName + " says Meow!";
+
+}
+
+catTalk();
+ we get beau
+
+
+
+
+108) COMPARE SCOPES OF THE VAR & LET KEYWORDS
+
+when you declare variable with var you declare it globally. or locally if declared inside a function.
+but let is limited to block statements, good to define the only the area they want to define.
+
+
+
+function checkscope() {
+"use strict";
+
+let i = "function scope";
+
+if (true) {
+
+let i = "block scope";
+console.log("Block scope i is: ", i");
+}
+
+console.log("Function scope i is: ", i");
+return i;
+}
+
+checkScope();
+we get
+Block scope i is: "block scope"
+Function scope i is: "function scope"
+
+
+or
+
+function checkscope() {
+"use strict";
+
+//let i = "function scope";
+
+if (true) {
+
+var i = "block scope";
+console.log("Block scope i is: ", i");
+}
+
+console.log("Function scope i is: ", i");
+return i;
+}
+
+checkScope();
+we get
+Block scope i is: "block scope"
+Function scope i is: "block scope"
+
+or
+
+
+function checkscope() {
+"use strict";
+
+//let i = "function scope";
+
+if (true) {
+
+let i = "block scope";
+console.log("Block scope i is: ", i");
+}
+
+console.log("Function scope i is: ", i");
+return i;
+}
+
+checkScope();
+we get
+Block scope i is: "block scope"
+ReferenceError : i is not defined (/index.js:11)
+
+
+
+
+109) DECLARE A READ-ONLY VARIABLE WITH THE CONST KEYWORD
+
+const is another way to declare variable, it has all the features of let, but its also read-only, you cannot re-assign a const.
+
+if you assign a variable with const you cannot reassign it.
+
+if you know for sure that you never want to reassign a variable then only use const.
+
+when you are using const ist very common to use all capital letter. thats another way to remember const
+
+function printManyTimes(str) {
+
+"use strict";
+
+var sentence = str + " is cool!";
+
+sentence = str + " is amazing!"
+
+for(var i = 0; i < str.length; i+=2) {
+console.log(sentence);
+}
+
+}
+
+printManyTimes("freeCodeCamp");
+
+
+we get freeCodeCamp is amazing
+
+but if we use const
+
+
+like this
+
+function printManyTimes(str) {
+
+"use strict";
+
+const sentence = str + " is cool!";
+
+sentence = str + " is amazing!"
+
+for(var i = 0; i < str.length; i+=2) {
+console.log(sentence);
+}
+
+}
+
+printManyTimes("freeCodeCamp");
+
+
+we get Error: SyntaxError: unknown: "sentence" is read-only (/index.js:1)
+
+
+or
+
+now do like this
+
+
+function printManyTimes(str) {
+
+"use strict";
+
+const SENTENCE = str + " is cool!";
+
+
+for(let i = 0; i < str.length; i+=2) {
+console.log(SENTENCE);
+}
+
+}
+
+printManyTimes("freeCodeCamp");
+
+
+we get Error: freeCodeCamp is cool
+
+
+
+
+
+
+110)  MUTATE AN ARRAY DECLARED WITH CONST
+
+  
+while you cannot reassign a variable declared with const but you can mutate an array.
+
+we get if we do like this
+
+const s = [5, 7, 2];
+
+function editInPlace() {
+
+"use strict";
+
+s = [2, 5, 7];
+
+}
+
+editInPlace();
+
+
+we get Error: SyntaxError: unknown: "s" is read-only (/index.js:1)
+
+
+or we sholud do like this to get update an array
+
+
+const s = [5, 7, 2];
+
+function editInPlace() {
+
+"use strict";
+
+s[0] = 2;
+
+s[1] = 5;
+
+s[2] = 7;
+
+}
+
+editInPlace()
+
+console.log(s)
+
+we get
+
+[2, 5, 7]
+
+**note= anything inside [] the box is called as index.
+
+
+
+
+
+111) PREVENT OBJECT MUTATION
+
+const doesnt alone protect the data from the mutation
+
+use object.freeze(use whwn you dont what any of the object to change)
+
+
+function freezeObj() {
+
+"use strict";
+
+const MATH_CONSTANTS = {
+
+PI: 3.14
+
+};
+
+try {
+
+MATH_CONSTANTS.PI = 99;
+} catch ( ex) {
+
+console.log(ex); (**ex means exemption)
+
+}
+
+return MATH_CONSTANTS.PI;
+}
+
+const PI = freezeObj();
+
+console.log(PI);
+
+
+we get, but we dont want to change pi
+99
+
+
+or
+
+
+
+function freezeObj() {
+
+"use strict";
+
+const MATH_CONSTANTS = {
+
+PI: 3.14
+
+};
+
+
+Object.freeze(MATH_CONSTANTS);
+
+try {
+
+MATH_CONSTANTS.PI = 99; (** here it skips the try & executes catch to console.log(ex)
+} catch ( ex) {
+
+console.log(ex); (**ex means exemption)
+
+}
+
+return MATH_CONSTANTS.PI;
+}
+
+const PI = freezeObj();
+
+console.log(PI);
+
+
+we get, 
+TypeError: Cannot assign to read only property 'PI' of object '<#Object>' (/index.js:13)
+
+
+
+
+
+
+112) USE ARROW FUNCTIONS TO WRITE CONCISE ANONYMOUS FUNCTIONS
+
+any function which has no name is called as anonymous function
+
+
+
+
+var magic = function() {
+
+return new Date();
+};
+
+or
+
+**instead
+var magic () => {
+
+return new Date();
+};
+
+because whenever you have an anonymous function you can change it into arrow function.
+
+
+or
+
+const MAGIC = () => new Date();
+
+if we are one value, we dont need {} and return keyword, we can directly put.
+all the above has same meaning.
+
+
+
+
+
+
+113) WRITE ARROW FUNCTIONS WITH PARAMETERS
+
+just like the normal function , you can pass arguments to arrow functions.
+
+
+var myConcat = function(arr1 arr2) {
+return arr1.Concat(arr2);
+};
+
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+
+or
+
+
+var myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+
+we get [1, 2, 3, 4, 5]
+
+
+or 
+
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+
+
+
+
+114) WRITE HIGHER ORDER ARROW FUNCTIONS
+
+
+arrow functions are really well with higher order functions mapp / filter & reduce
+they take functions as argument for passing collection of data.
+whenever one function take another function as argument then that is a good time for arrow function.
+map function takes the function as argument
+if have only single num argumnet then it dooesnt need to close () like this just on ( is needed.
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+
+const squareList = (arr) => {
+
+const squaredIntegers = arr;
+
+return squareIntegers;
+
+};
+
+const squareIntegers = squareList(realNumberArray);
+
+console.log(squaredIntegers);
+
+we get
+
+[4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2]
+
+
+or
+
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+
+const squareList = (arr) => {
+
+const squaredIntegers = arr.filter(num => Number.isInteger(num) && num > 0).map(x => x*x);
+
+return squareIntegers;
+
+};
+
+const squareIntegers = squareList(realNumberArray);
+
+console.log(squaredIntegers);
+
+we get
+
+[16, 1764, 36]
+* we computed the squares of only +ve integer in the array.
+
+
+
+
+115) WRITE HIGHER ORDER ARROW FUNCTIONS
+
+
+inorder to create more flexible functions you can use default parameter.
+the default parameter kicks in when the argument is not specified or undefined
+
+***if the value isnt passed in it will set into 1 automatically
+but if value is passed it will set to whatever it passed in.***
+const increment = (function() {
+return function increment(number, value =1) {
+return number + value;
+};
+})();
+
+console.log(increment(5, 2));
+console.log(increment(5));
+we get 
+7
+6
+
+
+
+116) USE THE REST OPEARATOR WITH FUNCTION PARAMETERS
+
+the rest opeartor allows you to create a function that takes a variable number argument.
+
+the rest operator is three dots
+
+const sum = (function() {
+
+return function sum(x, y, z) {
+
+const args = [x, y, z];
+
+return args.reduce((a, b) => a+b, 0);
+
+};
+
+}) ();
+
+console.log(sum(1, 2, 3));
+we get 6
+
+or
+
+const sum = (function() {
+
+return function sum(...args) {
+
+
+return args.reduce((a, b) => a+b, 0);
+
+};
+
+}) ();
+console.log(sum(1, 2, 3, 4));
+we get 10
+before you can add 3 arguments but now you can pass any number of arguments.
+
+
+
+
+117) USE THE SPREAD OPERATOR TO EVALUATE ARRAYS IN-PLACE
+
+the spread operator looks jus like a rest operator three dots
+but it expands in already existing array spreads OR IT spreads out in array
+it takes array & spreads out into individual parts. 
+
+
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+(function() {
+arr2 = arr1; //change this line
+arr1[0] = 'potato'
+})();
+console.log(arr2);
+
+
+we get
+
+["potato", "FEB", "MAR", "APR", "MAY"]
+
+
+or
+
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+(function() {
+arr2 = [...arr1]; //BY DOING THIS ARRAY 2 BECOMES EQUAL TO ARRAY 1
+arr1[0] = 'potato'
+})();
+console.log(arr2);
+
+
+we get
+
+["JAN", "FEB", "MAR", "APR", "MAY"]
+
+
+
+
+
+
+118) USE DESTRUCTING ASSIGNMENT TO ASSIGN VARIABLES FROM OBJECTS
+
+
+for neatly assigning the values taken directly from object to a variable.
+
+var voxel = {x: 3.6, y: 7.4, z: 6.54};
+
+var x = voxel.x; // x =3.6 (** old way)
+
+var y = voxel.y; // x =7.4
+
+var z = voxel.z; // x =6.54
+
+
+const {x: a, y : b, z: c} = voxel; //a=3.6, b=7.4, c=6.54 (new way destruction syntax)
+
+
+const AVG_TEMPERATURES = {
+today: 77.5,
+tomorrow: 79
+};
+
+function getTempOfTmrw(avgTemperature) {
+"use strict";
+// change code below this line
+
+const tempOfTomorow = undefined; // change this line
+// change code above this line
+
+return tempOfTomorrow;
+
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURES)); // SHOULD BE 79
+
+
+or
+
+
+var voxel = {x: 3.6, y: 7.4, z: 6.54};
+
+const {x: a, y : b, z: c} = voxel; //a=3.6, b=7.4, c=6.54 (new way destruction syntax)
+
+
+const AVG_TEMPERATURES = {
+today: 77.5,
+tomorrow: 79
+};
+
+function getTempOfTmrw(avgTemperature) {
+"use strict";
+// change code below this line
+
+const{ tomorrow : tempOfTomorow } = avgTemperatures; // change this line
+
+// change code above this line
+
+return tempOfTomorrow;
+
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURES)); // SHOULD BE 79
+
+
+
+119) DESTRUCTURING ASSIGNMENT WITH NESTED OBJECTS
+
+
+you can also use destructuring assignment to assign the variables from nested objects.
+
+
+
+const LOCAL_FORECAST = {
+today: { min: 72, max: 83 },
+tomorrow: { min: 73.3, max: 84.6 },
+};
+
+function getMaxOfTmrw(forecast) {
+"use strict";
+
+const { tomorrow : { max : maxOfTomorrow }} = forecast;
+
+return maxOfTomorrow;
+
+}
+
+console.log(getMaxOfTmrw(LOCAL_FORECAST));
+
+we get 84.6
+
+
+
+
+
+
+120) USE DESTRUCTURING ASSIGNMENT TO ASSIGN VARIABLES FROM ARRAYS
+
+diff b/w destructuring from arrays & destructuring from objects is you cannot specify which element in the array . it jus goes in order.
+
+use destructuring of arrays to shift the places
+
+
+const [z, x, , y] = [1, 2, 3, 4, 5, 6];
+
+console.log(z, x, y);
+we get (1, 2, 4)
+
+
+let a = 8, b = 6;
+
+(() => {
+"use strict";
+[a, b] = [b, a]
+})();
+console.log(a);
+console.log(b);
+
+we get
+6
+8 
+
+
+
+
+
+
+121) USE DESTRUCTURING ASSIGNMENT WITH THE REST OPERATOR
+
+ to reassign array elements we sholud us this
+
+
+const source = [1,2,3,4,5,6,7,8,9,10];
+
+function removeFirstTwo(list) {
+
+const [ , , ...arr] = list; (** ,, two comma mean  to leave fist two elements and... keep rest of all elements)
+
+return arr;
+
+}
+
+const arr = removeFirstTwo(source);
+console.log(arr);
+console.log(source);
+we get
+[3,4,5,6,7,8,9,10]
+[1,2,3,4,5,6,7,8,9,10]
+
+
+
+122) USE DESTRUCTING ASSIGNMENT TO PASS AN OBJECT AS A FUNCTION'S PARAMETERS
+instead of passing entire data we jus pass what we need (max & min)
+this is commonly used in api calls when you are getting from api requests
+
+const stats = {
+max: 56.78,
+standard_deviation: 4.34,
+median: 34.54,
+mode: 23.87,
+min: -0.75,
+average: 35.85
+
+};
+
+const half = (function() {
+
+return function half(stats) {
+return (stats.max + stats.min) / 2.0;
+};
+
+})():
+console.log(stats);
+console.log(half(stats));
+
+we get
+
+{max: 56.78, standard_deviation: 4.34, median: 34.54, mode:23.87, min: -0.75, average: 35.85}
+28.015
+
+or
+
+const stats = {
+max: 56.78,
+standard_deviation: 4.34,
+median: 34.54,
+mode: 23.87,
+min: -0.75,
+average: 35.85
+
+};
+
+const half = (function() {
+
+return function half(stats) {
+return (max + min) / 2.0;
+};
+
+})():
+console.log({ max, min });
+console.log(half(stats));
+
+we get
+
+{max: 56.78, standard_deviation: 4.34, median: 34.54, mode:23.87, min: -0.75, average: 35.85}
+28.015
+
+
+
+123) CREATE STRINGS USING TEMPLATE LITERALS
+
+template literals are a special type of string that makes creating complex strings easier.
+
+you make them with back tick ` (thse could be used instead of using single & double quotation marks) 
+main use of this black tick ` a)is you can use multiline strings
+b) you can use "" & '' inside the string without eccaping them
+c) you can compose variables in the strings
+anything b/w ${} is javascriprt
+
+const person = {
+name: "Zodiac Hasbro",
+age: 56
+};
+
+//Template literal with-line and string interpolation
+
+const greeting = ` Hello, my name is $ {person.name}!
+I am ${person.age} years old.`;
+
+
+console.log(greeting);
+
+** new one
+
+const result = {
+
+success: ["max-length", "no-amd", "prefer-arrow-functions"],
+failure: ["no-var", "var-on-top", "linebreak"],
+skipped: ["id-balcklist", "no-dup-keys"]
+};
+
+function makeList(arr) {
+
+const resultDisplayArray = [];
+
+for (let i = 0; i < arr.length; i++ ) {
+resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`)
+}
+
+return resultDisplayArray;
+}
+
+/** 
+* makeList(result.failure) should return:
+*[` <li class="text-warning">no-var</li>`,
+*<li class="text-warning">var-on-top</li>`,
+*<li class="text-warning">no-var</li>`, ]
+**/
+
+const resultDisplayArray = makeList(result.failure);
+
+console.log(resultDisplayArray) 
+
+we get
+
+hello, my name is hasbro! i am 56 years old.
+
+["<li class="text-warning">na-var</li>", "li class="text-warning">var-on-top</li>", "<li class="text-warning">linebreak</li>"]
+
+
+
+
+
+124) WRITE CONCISE OBJECT LITERAL DECLARATIONS USING SIMPLE FIELDS
+
+
+yes it is added some nice support for easily defining object literals
+
+object is going to have some series of key value pairs
+=> means arrow function
+
+const createPerson = (name, age, gender) => {
+
+return {
+name: name,
+age: age,
+gender: gender,
+};
+
+};
+
+console.log(createPerson("zodiac hasbro", 56, "male"));
+
+we get { name: "zodiac hasbro", age: 56, gender: "male"}
+
+
+
+
+or
+
+if you know, you are going to  going to create an object where create key is key of the variable & value is the value of the variable.
+
+const createPerson = (name, age, gender) => ({ name, age, gender});
+
+console.log(createPerson("zodiac hasbro", 56, "male"));
+
+we get { name: "zodiac hasbro", age: 56, gender: "male"}
+
+
+
+
+
+
+125) WRITE CONCISE DECLARATIVE FUNCTIONS
+
+IN AN  object CONCATING function this  BELOW IS THE LONG WAY TO put an object within the funcion.
+
+
+
+const bicycle = {
+
+gear: 2,
+
+setGear: function(newGear) {
+
+"use strict";
+
+this.gear = new Gear;
+
+}
+
+};
+
+bicycle.setGear(3);
+
+console.log(bicycle.gear);
+
+we get 3
+
+
+or
+
+** 
+
+const bicycle = {
+
+gear: 2,
+
+setGear(newGear) {
+
+"use strict";
+
+this.gear = new Gear;
+
+}
+
+};
+
+bicycle.setGear(3);
+
+console.log(bicycle.gear);
+
+we get 3
+
+
+
+
+
+126) USE CLASS SYNTAX TO DEFINE A CONSTRUCTOR FUNCTION
+
+ES6 PROVIDES a syntax to help create objects using the class keyword
+
+var SpaceShuttle = function(targetPlanet){  // this three line is called as constructor function
+  this.targetPlanet = targetPlanet;
+}
+
+var zeus = new SpaceShuttle('Jupiter');
+
+console.log(zeus.targetPlanet)
+
+we get "jupiter"
+
+
+or 
+
+the class syntax replaces the constructor function creation
+
+class SpaceShuttle {
+  constructor(targetPlanet){ 
+    this.targetPlanet = targetPlanet;
+  }
+}
+
+var zeus = new SpaceShuttle('Jupiter');
+
+console.log(zeus.targetPlanet)
+
+we get "jupiter"
+
+
+next CHALLENGE
+
+function  makeClass() {
+  class Vegetable {
+    constructor(name){
+      this.name = name;
+    }
+  }
+  return Vegetable;
+}
+
+const Vegetable = makeClass();
+const carrot = new Vegetable('carrot');
+console.log(carrot.name);
+
+we get carrot
+
+
+
+
+127) USE GETTERS AND SETTERS TO CONTROL ACCESS TO AN OBJECT
+
+with a class object you often want to obtain values from the object and set a value of a property within an object. 
+These often called Getters and Setters. To get and set the writer.
+we can get the writer and set the writer.
+
+Getter function are meant to simply return or get the value of a n objects private variable to the user without user directly accessing the private variable. 
+so the private variable is _author "UNDERSCORE" that you set when you construct the object.
+
+and when we do get the writer to return this._author ,
+
+so you never actually interact directly with this._author  variable but it get the writer which is the author here
+
+AND when setting it is the same, you never actually interacting with _author but you can set with the writer setter.
+
+this change convert calculations even over write the previous value .
+
+this means the varible only accesible within the class here.
+
+whenever you start a variable with _ ("UNDERSCORE), thats goin to generally signify its a private variable.
+You are not supposed access it outside the scope / class.
+
+class Book {
+  constructor(author) {
+    this._author = author;
+  }
+
+  // Getter
+  get writer(){
+    return this._author;
+  }
+
+  // setter
+  set writer(updatedAuthor){
+    this._author = updatedAuthor;
+  }
+} 
+
+where are not going to set 
+ this._temp = this._temp; because its passed in as a farenheat and we are going it to convert into celcius.
+
+//
+
+function makeClass(){
+  class Thermostat {
+    constructor(temp) {
+      this._temp = 5/9 * (temp - 32);
+    }
+    get temperatur e(){
+      return this._temp;
+    }
+    set temperature(updatedTemp){
+      this._temp = updatedTemp;
+    }
+  }
+  return Thermostat;
+}
+
+
+const Thermostat = makeClass();
+const thermos = new Thermostat(76);  // when we instantiating an object you use the new keyword 
+let temp = thermos.temperature;  // if generally there is a function you see () after the fuunction name, but if its variable or property name its not going to have () jus like .temperature in this code. so getters and setters are accesed similar to properties. we use getter here 
+thermos.temperature = 26; // we use setter here
+temp = thermos.temperature;
+
+console.log(temp);
+
+// new program
+
+
+
+128) UNDERSTAND THE DIFFERENCE BETWEEN IMPORT AND REQUIRE.
+
+In the past people would used require functions to import functions and code from other files
+but now we have import and exports 
+you can export in one file and import in other file.
+it also allows you to import only certain functions and variables.
+
+**
+we have in other file string_functions.js
+
+export const capitalizeString = str => str.toUpperCase()
+
+** actual file 
+to import we use {}**
+
+import { capitalizeString } from "./string_function"  //// .js is assumed, you dont neec to put the file name.
+
+const cap = capitalizeString("hello!");
+
+console.log(cap);
+
+
+
+
+129) USE EXPORT TO REUSE A CODE BLOCK
+
+You export from one file to import in another file..
+
+const capitalizeString = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+export { capitalizeString };  // like this we can export the above functions
+
+export const foo = "bar"; // like thos we can export variable.
+export const bar = "foo";
+
+later we can import them in to another file.
+
+
+
+
+130) USE * TO IMPORT EVERYTHING FROM A FILE.. 
+
+import * as capitalizeStrings from "capitalize_strings"; // you need put ./ if the file is in the same directory.
+
+as = anything we want to import  **
+
+"" = filename**
+
+
+
+131) CREATE AN EXPORT FALLBACK WITH EXPORT DEFAULT
+
+export default is called as fallback export often used when you only want to export one thing from a file. 
+
+** exporting file data
+
+export default function subtract(x,y) {return x - y;}
+
+
+
+132) IMPORT A DEFAULT EXPORT
+
+if you had not set an default export to a function, and when you use it, it will show red underline.
+
+if it is not default export you put {} , but if it is default export then you need not to put.
+
+**
+
+import subtract from "math_functions";
+
+subtract(7,4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
