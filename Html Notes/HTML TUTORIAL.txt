@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<meta charset="utf-8"> used to define character & coding to the website
+<meta name="description" content="this ia an pharmacy page"> used to describe the website
+<h1> xyz </h> header tag can be used from h1 to h6  h1=bigger h6=smaller
+<p> </p> paragraph tag
+<b> </b> to make bold
+<i> </i> to make italic
+<br/> break tag or space tag
+<hr/> horizontal line
+<big> </big>
+<small> </small>
+<sub> </sub> h(2)0
+<sup> </sup> 10(2)
+<!-- fjfjfjjfjfjf --> doesnt read by browser, to make note or to  dsiplay to other developers
+or to explain something that cant be explained by code
+<p style="color: red; background-color: blue;">
+<h2 style= "color:green;">
+<body style="background-color:lightblue;"
+w3 colors
+formating a page
+<header>
+</header> <nav> </nav>
+
+<main> <article> </article> <section> <aside> adds or not directly related to core content </aside>  </section>
+</main>
+
+<footer>
+</footer>
+all 3 are siblings and children of body tag
+h1
+h2
+h3
+links
+<a href="https://www.google.com"> <h1> googles home page </h1> </a>  directly navigate
+<a href="https://www.google.com" target="_blank" > googles home page </a> to open in a new tab
+
+<a href="page2.html" >page2< </a> same folder
+<a href="dir1/page3.html" >page3< </a> diff folder
+<a href="cat.jpg" >cat< </a> same folder
+images
+<img src="hkh vn" alt="hchc" /> alt tag is for backup  
+<img width="100" height="66" src="hkh vn" alt="hchc" /> remember and add aspect ratio or addinf any one is ok
+
+  lists
+<ul> unordered lists
+
+<li> apples </li>
+<li> oranges </li>
+
+</ul>
+
+<ul> unordered lists
+
+<li> <a href="#">apples</a></li>
+<li> oranges </li>
+
+</ul>
+
+
+
+<ol> ordered lists </ol>
+<ol> ordered lists </ol>
+<ol type="A">
+<dl> description list
+<dt> desciption term </dt>
+<dd> description </dd>
+</dl>
+ 
+ol> ordered lists </ol>
+<ol> ordered lists </ol>
+<ol type="1 or A  OR I">
+<dl> description list
+<dt>- desciption term </dt> 
+<dd> description </dd>
+</dl>
+
+
+<ol> unordered lists
+
+<li> apples </li>
+<li> oranges 
+
+<ol>
+
+<li>item1</li>
+
+</ol>
+
+
+</li>
+
+</ol>
+
+
+
+
+
+
+
+
+
+
+<video src="tutorial.mp4" poster="thumb.jpg" autoplay controls width="300"></video>
+
+<video src="tutorial.mp4" poster="thumb.jpg" loop controls width="300"></video>
+
+
+
+ TABLE
+
+<table>
+
+<tr> table row / one horizontal row
+
+<td>one</td> table data (one column)
+<td>two</td> table data (one column)
+<td>three</td> table data (one column)
+
+
+
+</tr>
+
+<tr> table row / one horizontal row
+
+<th>one</th> table header(titles)  ()
+<th>two</th> table header (one column)
+<th>three</th> table header (one column)
+<td>three and half</td> table data (one column)
+
+</tr>
+
+
+</table>
+
+
+<table>
+<thead>
+
+<caption>List of Numbers</caption>
+<caption><h2>List of Numbers</h2></caption>
+
+
+<tr> table row / one horizontal row
+
+<td>one</td> table data (one column)
+<td>two</td> table data (one column)
+<td>three</td> table data (one column)
+
+
+
+</tr>
+
+</thead>
+
+<tbody> </tbody>
+<td colspan="2">one</td> (will take space of 2 columns)
+
+<tr> table row / one horizontal row
+
+<th>one</th> table header(titles)  ()
+<th>two</th> table header (one column)
+<th>three</th> table header (one column)
+<td>three and half</td> table data (one column)
+
+</tr>
+
+
+</table>
+
+
+(css elements)
+DIVS & SPANS 
+
+divs are block containers
+spans are inline containers
+
+(CONTAINERS IN HTML, BASICALLY A TAG THAT WRAPS OTHER ELEMENTS)WRAPPER TAG
+
+2 MAIN WAYS 
+(A) BLOCK (TAKES MORE SPACES) 
+(B) IN LINE (SIT NEXT TO EACH OTHER)
+
+<a href="#">link1</a>
+<a href="#">link2</a> (in line element)
+
+<a href="#">linkasdf1</a>
+<a href="#">link2</a>
+
+<p>paragraph1</p>
+<p>paragraph2</p> (block elements)
+
+
+<span>span1</span>
+<span>span2</span>
+
+<div>div1</div>
+<div>div2</div>
+
+
+
+INPUT & FORMS (JAVASCRIPT)
+
+ADD ELEMENTS ON PAGE USER CAN INTERACT WITH (TEXT BOXES/TEXT AREAS)
+
+<input type="text" /> (single tag)
+
+<input type="password" />
+
+ <input type="text" value="ENTER YOUR USERNAME" />
+
+<textarea rows="10" cols="30"> (resizeable)
+
+enter a paragraph
+
+</textarea>
+
+<input type="date/email/range/file" />
+
+<input type="checkbox" />
+<input type="checkbox" /> can click both options
+
+<input name="btn" type="radio" />
+<input name="btn" type="radio" /> can click only one options
+
+
+<input type="submit" />
+
+
+(FORM)
+BASICALLY USED TO STORE ALL INPUTS (WRAPPER FOR BUNCH OF THE USER INPUT)
+
+
+
+
+(IFRAMES)
+HTML ELEMENT USED TO DISPLAY ANOTHER WEBPAGE INTO YOUR WEBPAGE (EMBED)
+
+<iframe src="http://giraffeacademy.com/">sorry</iframe> ( if there browser doesnt support iframe then the follwoing text will be showed)
+
+iframe src="http://giraffeacademy.com/" width="300" height="800">sorry</iframe>
+iframe src="http://giraffeacademy.com/" frameborder="0" width="300" height="800">sorry</iframe>
+
+*****(learn how to avoid iframe using your own website)
+
+(META TAGS)
+LIVES IN HEAD OF THE HTML TAG
+META DATA
+<meta name="description" content="your description" > (for search engines) should be under 160 characters more than 200 means search engine will ignore.
+<meta name="author" content="mike" >
+<meta name="keywords" content="HTML, tutorial, Giraffe Academy" >
+
+keywords main content to rank your page
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" ( how website is displayed based on different screen sizes)
+if not done then website will look zoomed out on mobile devices
+search google for more meta tags
