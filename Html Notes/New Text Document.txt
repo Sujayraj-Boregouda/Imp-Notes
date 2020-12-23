@@ -1,0 +1,13 @@
+<html>
+<head> <title> My First Webpage </title>
+</head>
+
+<body bg color="green>
+<body background image="img.jpg>
+
+< P ALIGN="RIGHT"> <FONT SIZE="50" COLOR="RED"> This is a sentence </FONT> </P> <br/>
+
+<img src="image.jpg" height="300" width="500" />
+
+</body>
+</html>
