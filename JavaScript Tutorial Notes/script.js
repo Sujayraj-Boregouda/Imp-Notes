@@ -1,4 +1,5 @@
-var myvar = 3;
+var name = "sujay";
 
-myvar++;
-console.log(myvar);
+name +=  "gouda";
+
+console.log(name);

@@ -33,8 +33,46 @@ var, let , const
 10)  Incrementing Numbers
 
 
-11) Incrementing myvar (myvar++;)
+11) Incrementing myvar (myvar++;) & Decrmenting myvar  (myvar--;)
 
 
-12) Decrmenting myvar  (myvar--;)
+12) Decimal Numbers (Anything has a point in it)
+
+
+13) Multiplying Decimals (2.0 * 2.0)
+
+
+14) Divide Decimals (10.0 / 2.1)
+
+
+15) Finding a Reminder (if you divide a number by 2 and remainder is zero then the number is even) 
+    (var remainder = 20 % 2;)
+
+
+16) COMPOUND ASSIGNMENT WITH AUGMENTED ADDITION (+=)
+
+                         var a=3;
+
+    normal way           var a = a + 2;
+
+    augmented addition   a += 2;
+
+
+17) COMPOUND ASSIGNMENT WITH AUGMENTED  SUBSTRACTION (-=)
+
+
+18) COMPOUND ASSIGNMENT WITH AUGMENTED MULTIPLICATION (*=)
+
+
+19) COMPOUND ASSIGNMENT WITH AUGMENTED DIVISION (/=)
+
+
+20) DECLARE STRING VARIABLES 
+
+    //example
+
+    var firstName = "Alan" 
+
+
+
 
