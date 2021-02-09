@@ -1,0 +1,40 @@
+
+
+
+1) Data types & Variables
+
+var, let , const
+
+
+2) Declaring variables (var a;)
+
+
+3) Initializing variables (initialsing means var a = 2;)
+
+
+4) Uninitailising variables (means not set to anything)
+
+
+5) camelcase (declaration and assignment both should match)     
+
+
+6)Adding Numbers
+
+
+7)Substraction Number
+
+
+8) Multiplaication of Numbers
+
+
+9) Divsision of Numbers
+
+
+10)  Incrementing Numbers
+
+
+11) Incrementing myvar (myvar++;)
+
+
+12) Decrmenting myvar  (myvar--;)
+
