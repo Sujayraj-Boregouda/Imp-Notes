@@ -133,3 +133,58 @@ var, let , const
 
     var ourStr = "I come first. ";
     ourStr += "I come second. ";
+
+
+
+26) CONSTRUCTING STRINGS WITH VARIABLES
+
+    var ourName = " freecodecamp";
+    var ourStr = " Hello, our name is " + our name + ", how are you?";
+
+
+27) APPENDING VARIABLES TO STRINGS
+
+    var anAdjective ="awesome!";
+    var ourStr = "freeCodeCamp is ";
+    ourStr += anAdjective;
+
+
+28) FIND LENGTH OF STRING
+
+    var firstNameLength = 0;
+    var firstName = "Ada";
+    firstNameLength = firstName.length;
+
+
+29) BRACKET NOTATION TO FIND FIRST CHARACTER IN STRING
+
+    var firstLetterOfFirstName = "";
+    var firstName = "Ada";
+    firstLetterOfFirstName = firstName[0];
+
+
+30) BRACKET NOTATION TO FIND NTH CHARACTER IN STRING
+
+    var firstName = "Ada";
+    var secondLetterOfFirstName = firstName[1];
+
+
+31) BRACKET NOTATION TO LAST CHARACTER IN STRING
+
+    var firstName = "Ada";
+    var lastLetterOfFirstName = firstName[firstName.length - 1];
+        
+
+32) STRING IMMUTABILITY
+
+    (MEANS THEY CANNOT BE ALTERED ONCE CREATED, DOESNT MEAN CANNOT BE CHANGED 
+    BUT INDIVIDUAL CHARCTER CANNOT BE CHANGED)
+
+     var myStr = "Jello World";
+     myStr[0] = "H"; // Fix me 
+
+     ** if we run this code means we get error
+
+     so we need to do
+
+     myStr = "Hello World";

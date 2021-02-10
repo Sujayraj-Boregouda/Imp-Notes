@@ -1,5 +1,5 @@
-var rk = "epub ";
+var middleName = "Nanjegouda";
 
-rk += "xml";
+var secondLetterOfMiddleName = middleName[middleName.length-2];
 
-console.log(rk)
+console.log(secondLetterOfMiddleName)
