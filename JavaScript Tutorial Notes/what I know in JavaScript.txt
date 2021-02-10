@@ -75,4 +75,61 @@ var, let , const
 
 
 
+21) ESCAPING LITERAL QUOTES IN STRINGS
 
+    \escp character to put before quotation marks
+
+    means no longer last character
+
+    var myStr = "I am a \"double quoted\" string inside \"double quotes"";
+
+
+22) QUOTING STRINGS WITH SINGLE QUOTES
+
+   var myStr = "<a href=\"http://www.example.com\" target=\"_blank\">link</a>;
+
+                                        or
+
+   var myStr = '<a href="http://www.example.com" target="_blank">link</a>';
+
+   single' can also be used to escape instead of \ or we can alos use back text `` at beginging and ending.
+   by doing so we can use both single & Double quote
+
+
+
+23) ESCAPE SEQUENCE IN STRINGS
+
+
+     \' single quote
+
+     \" double quote
+
+     \\ backslash
+
+     \b backspace
+
+     \t tab
+
+     \n newline
+
+     \r carraiage return
+
+     \f form feed
+
+
+     example  // var myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+
+     ** first line then , new line, tab, then second line, then third line.
+
+
+
+24) CONCATENATING STRINGS WITH PLUS OPERATOR
+
+     var myStr = "This is the start. " + "This is the end."
+     console.log(myStr);
+
+
+25) CONCATENATING STRINGS WITH PLUS EQUAL OPERATOR
+
+    var ourStr = "I come first. ";
+    ourStr += "I come second. ";

@@ -1,5 +1,5 @@
-var name = "sujay";
+var rk = "epub ";
 
-name +=  "gouda";
+rk += "xml";
 
-console.log(name);
+console.log(rk)
