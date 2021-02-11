@@ -1,5 +1,3 @@
-var middleName = "Nanjegouda";
+var list = [["milk", 2], ["banana", 24], ["tea", 1], ["sugar", 2]];
 
-var secondLetterOfMiddleName = middleName[middleName.length-2];
-
-console.log(secondLetterOfMiddleName)
+console.log(list)

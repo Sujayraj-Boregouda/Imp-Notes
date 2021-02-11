@@ -175,7 +175,13 @@ var, let , const
     var lastLetterOfFirstName = firstName[firstName.length - 1];
         
 
-32) STRING IMMUTABILITY
+32) BRACKET NOTATION TO FIND NTH TO LAST CHARACTER IN STRING 
+
+    var firstName = "Ada";
+    var thirdToLastLetterOfFirstName = firstName[firstName.length-3];
+
+
+33) STRING IMMUTABILITY
 
     (MEANS THEY CANNOT BE ALTERED ONCE CREATED, DOESNT MEAN CANNOT BE CHANGED 
     BUT INDIVIDUAL CHARCTER CANNOT BE CHANGED)
@@ -188,3 +194,86 @@ var, let , const
      so we need to do
 
      myStr = "Hello World";
+
+
+34) WORD Blanks 
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+var result = "";
+result += "The" + myAdjective + " " + myNoun + " "+ myVerb + " to the store " + myAdverb
+return result;
+}
+console.log(wordBlanks("dog", "big", "ran", "quickly"));
+
+
+35) STORE MULTIPLE VALUES WITH ARRAYS
+
+    arrays allow to store several piece of data in one place.
+    arrays always start with the bracket and end with the bracket.
+    every element in the array is separated by the comma, 
+    in the firt element is the string and second element is the number.we can use any type of data.
+
+    var ourArray = ["John", 23];
+
+36) NESTED ARRAYS 
+    when one of the element in array is another array that is called nested array or a multi-dimensional array.
+
+    var ourArray = [["the universe", 42], ["everything", 101010]];
+
+
+37) ACCESS ARRAY DATA WITH INDEXES
+
+    var ourArray = [50,60,70];
+    var ourData = ourArray[0]; // equals 50
+
+
+38) MODIFY ARRAY DATA WITH INDEXES
+
+
+
+39) MODIFY ARRAY DATA WITH INDEXES
+
+    we were not able to modify a string using bracket notation. but with arrays you can.
+    var ourArray = [18,64,99];
+    ourArray[1] = 45; // ourArray now equals [18, 45, 99].
+
+40) ACCESS MULTI-DIMENSIONAL ARRAYS WITH INDEXES
+    to access arrays in array we use double bracket
+    1st bracket indicates the set which we want
+    2nd bracket indicates the particular element in the bracket
+
+    if we want the number to get 8 means.
+
+    var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+    var myData = myArray [2][1]
+
+
+41) MANIPULATE ARRAYS WITH POP()
+
+    ** we can remove an item from an array using pop function.
+    ** removes the last element inside the final element.
+
+    var ourArray = [1,2,3];
+    var removedFromOurArray = ourArray.pop();
+    // removedFromOurArray now equals 3, and ourArray now equals [1,2]
+
+
+42) MANIPULATE ARRAYS WITH SHIFT ()
+
+   similar to pop but it removes the FIRST ELEMENT INSIDE THE FINAL ELEMENT
+
+
+43)MANIPULATE ARRAYS WITH push()
+
+   push adds in the last
+
+
+44) MANIPULATE ARRAYS WITH UNSHIFT ()
+
+   similar with push function while push adds in the last but unshift adds in the beginning.
+
+
+45) Shopping List
+
+    var myList = [["cereal", 3], ["milk", 2], ["bananas", 3], ["juice", 2], ["eggs", 12]];
+

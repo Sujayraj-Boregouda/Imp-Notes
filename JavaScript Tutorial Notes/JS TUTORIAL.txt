@@ -744,8 +744,6 @@ we get [["John", 23]]
 
 
 
-
-
 42) MANIPULATE ARRAYS WITH SHIFT ()
 
 ** similar to pop but it removes the FIRST ELEMENT INSIDE THE FINAL ELEMENT
