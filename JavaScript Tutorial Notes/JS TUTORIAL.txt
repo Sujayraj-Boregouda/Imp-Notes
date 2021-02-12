@@ -867,7 +867,7 @@ if we console we get
 
 
 
-
+47) 
 47) GLOBAL SCOPE AND FUNCTIONS
 
 ** scope refers to visibility of variables.

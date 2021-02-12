@@ -277,3 +277,91 @@ console.log(wordBlanks("dog", "big", "ran", "quickly"));
 
     var myList = [["cereal", 3], ["milk", 2], ["bananas", 3], ["juice", 2], ["eggs", 12]];
 
+
+
+46) WRITE REUSABLE CODE WITH FUNCTIONS
+
+    // Example
+
+    function ourReusableFunction() {
+    console.log("Heyya, world");
+    }
+
+    ourReusableFunction();
+
+
+47) PASSING VALUES TO FUNCTIONS WITH ARGUMENTS
+
+    //Example
+
+
+    function ourFunctionWithArgs(a, b) {
+    console.log(a-b);
+    }
+
+48) GLOBAL SCOPE AND FUNCTIONS
+
+    ** scope refers to visibility of variables.
+    variables which are defined outside the function block are global scope.
+    global scope mean they can be seen everywhere in javascript.
+
+   != means does not equal 
+
+
+49) LOCAL SCOPE AND FUNCTIONS
+
+    ** variables which are declared within the function as well as function parameter have local scope.
+    that means they are only visible within the function.
+
+    function myLocalScope() {
+
+    var myVar =5;
+    console.log(myVar);
+    }
+
+    myLocalScope();
+    console.log(myVar);
+
+50) GLOBAL VS LOCAL SCOPE IN FUNCTIONS
+    ** it is possible to have both global & local function in same name.
+    when we do this local presedent takes over global variable.
+
+
+    var outerwear = "T-Shirt"; (it is defined outside the variable hence global variable)
+
+    function myOutfit() {
+    return outerWear;
+    }
+    console.log(myOutfit());
+
+    ** we get t shirt
+
+    or
+
+    function myOutfit() {
+ 
+    var outerWear = "sweater";
+
+    return outerWear;
+    }
+
+    console.log(myOutfit());
+
+    ** we get sweater (because sweater is local variable)
+
+
+    if we console.log(outerwear); we get t shirt.
+
+
+
+51) RETURN A VALUE FROM A FUNCTION WITH RETURN
+
+
+    function minusSeven(num) {
+    return num - 7;
+    }
+
+    console.log(minusSeven(10));
+
+
+

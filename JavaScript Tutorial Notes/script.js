@@ -1,3 +1,27 @@
-var list = [["milk", 2], ["banana", 24], ["tea", 1], ["sugar", 2]];
+/*
 
-console.log(list)
+var outerWear = "T-Shirt";
+
+function myOutfit(){
+    var outerWear = "sweater";
+
+    return outerWear;
+}
+
+console.log(myOutfit());
+
+console.log(outerWear);
+
+*/
+
+
+var outerWear = "tshirt";
+
+function myOutfit(){
+    var outerWear="sweater";
+    return outerWear;
+}
+
+console.log(myOutfit());
+
+console.log(outerWear)
