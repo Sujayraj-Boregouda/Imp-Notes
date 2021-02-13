@@ -1,27 +1,10 @@
-/*
-
-var outerWear = "T-Shirt";
-
-function myOutfit(){
-    var outerWear = "sweater";
-
-    return outerWear;
+function istrue(){
+    if (true){
+        return "true";
+    }
+    else {
+        return "false";
+    }
 }
 
-console.log(myOutfit());
-
-console.log(outerWear);
-
-*/
-
-
-var outerWear = "tshirt";
-
-function myOutfit(){
-    var outerWear="sweater";
-    return outerWear;
-}
-
-console.log(myOutfit());
-
-console.log(outerWear)
+console.log(false)
