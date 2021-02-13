@@ -429,11 +429,108 @@ console.log(wordBlanks("dog", "big", "ran", "quickly"));
    return "yes, it's true";
     }
    return "No, it's false";
+}
+
+57) COMPARISON WITH THE EQUALITY OPERATOR
+   ** another operator for true or false.
+
+    // Example
+
+    function testEqual(val) {
+
+    if (val==12) { // Chnage this line(**= sign is assign operator so we use == to indicate equal)
+
+   return "Equal";
+   }
+    return "Not Equal";
+  }
+
+  // Change this value to test
+  testEqual(10);  
+
+   ** console.log(testEqual(10));
+
+   we get "Not Equal"
 
 
-    }
+   function testEqual(val) {
+
+   if (val==12) { // Chnage this line(**= sign is assign operator so we use == to indicate equal)
+
+
 
  
+58) COMPARISON WITH THE STRICT EQUALITY OPERATOR
+
+    === MEANS STRICT EQUAL SYMBOL
+
+  
+59) PRACTICE COMPARING DIFFERENT VALUES
+
+ // Setup
+
+function compareEquality(a, b) {
+
+if (a == b) { // Change this line (** this uses type converter)
+
+return "Equal";
+}
+return "Not Equal";
+}
+
+// Change this value to test 
+console.log(compareEquality(10, "10"));
+
+**we get equal
+
+but
+
+if (a === b) then because of the string we get not equal for the above value. 
 
 
+60) COMPARISION WITH THE INEQUALITY OPEARATOR
 
+!= MEANS NOT EQUAL SIGN
+
+
+// Setup
+
+function testNotEqual(val) {
+
+if (val != 99) { // Change this line (** this uses type converter)
+
+return " Not Equal";
+}
+return " Equal";
+}
+
+// Change this value to test 
+console.log(testNotEqual(10));
+
+ we get not equal.
+
+
+61) COMPARISION WITH THE STRICT INEQUALITY OPERATOR
+
+** same as 57 ex
+
+// Setup
+
+function testStrictNotEqual(val) {
+
+// Only change code below this line
+
+if (val !== 17) {
+
+
+// Only change code above this line
+
+return " Not Equal";
+}
+return " Equal";
+}
+
+// Change this value to test 
+console.log(testStrictNotEqual(10));
+
+ we get not equal.
