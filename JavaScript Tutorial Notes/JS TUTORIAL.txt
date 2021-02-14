@@ -1598,12 +1598,6 @@ par + 1
 par + 2
 
 
-
-
-
-
-
-
 72) SWITCH STATEMENTS
 
 ** instead using chained statements use switch statements.
@@ -1632,11 +1626,6 @@ return answer;
 console.log(caseInSwitch(2))
 we get "beta"
 ** if you dont use break statement then it will run to next case automatically.
-
-
-
-
-
 
 
 73) DEFAULT OPTION IN SWITCH STATEMENTS
