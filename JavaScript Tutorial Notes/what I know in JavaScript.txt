@@ -730,10 +730,7 @@ console.log(orderMyLogic(3));
     console.log(testSize(7));
 
 
-*******************************
-72) 
-
-71) GOLF CODE
+72)  GOLF CODE
 
 var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home"]
 
@@ -764,24 +761,6 @@ return names[6]
 // change these values to test
 
 golfScore(5,4);
-
-/*
-
-STROKES  			RETURN
-
-1			"Hole-in-one!"
-
-1
-
-<= par - 2
-
-par - 1
-
-par
-
-par + 1
-
-par + 2
 
 
 72) SWITCH STATEMENTS
@@ -888,14 +867,9 @@ console.log(sequentialSizes((1);
 we get low
 
 
-
-
 75) REPLACING IF ELSE CHAINS WITH SWITCH
 
 ** sometimes switch statement is more easy to write & reading than chain of else and if else.
-
-
-
 
 function functionToSwitch(val) {
 var answer = "";
@@ -948,6 +922,187 @@ like this we can change the chain of if else statement to switch statements.
 
 return answer;
 }
+
+  
+76) RETURNING BOOLEAN VALUES FROM FUNCTIONS
+
+
+function isLess(a, b) {
+
+// Fix this code
+
+if (a < b) {
+
+return true;
+} else {
+return false;
+}
+}
+
+// change these values to test
+
+console.log(isLess(10, 15))
+
+
+***** instead we should do
+
+function isLess(a, b) {
+
+// Fix this code
+
+return a < b {
+
+
+// change these values to test
+
+console.log(isLess(10, 15))
+
+we get true.
+
+
+console.log(isLess(20, 15))
+
+we get false.
+
+
+
+
+
+
+77) RETURNING EARLY PATTERN FROM FUNCTIONS
+
+// setup
+
+function abTest(a, b) {
+// only change code below this line
+
+if (a < 0 || b < 0) {
+return undefined;
+}
+
+
+// only change code above this line
+
+return Math.round(Math.pow(Math.sqrt(a)+ Math.sqrt(b), 2));
+
+// change values below to test your code.
+console.log(abTest(2,2));
+
+
+
+
+
+78) COUNTING CARDS
+
+*****
+low card the count goes up 
+middle value card the count stays the same
+high card the count goes down
+when the count is +ve the player should bet high
+when the count is zero or -ve the player should bet low
+you can use many ways to write this if else or many ways , program should work however
+
+
+var count = 0;
+
+function cc(card) {
+switch(card) {
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+	count++; (++ means it increments one)(if case is 2/3/4/5/6 we gonna add)
+	break;					if case is 7/8/9 we gonna do nothing
+case 10:					if case is 10/j/q/k/a we gonna sub
+case "J":
+case "Q":
+case "K":
+case "A":
+		count--; (-- means minus one)
+		break;
+}
+
+var holdbet = 'Hold'
+if (count > 0) {
+holdbet = 'bet'
+}
+
+
+
+
+return count + " " + holdbet;
+
+}
+
+cc(2); cc(3); cc(7); cc('k'); cc('a');
+console.log(cc(4))
+we get 1 bet
+
+
+cc(2); cc(k); cc(10); cc('k'); cc('a');
+console.log(cc(4))
+we get - 2 hold
+
+
+
+
+
+
+79) BUILD JAVASCRIPT OBJECTS
+similar to arrays but instead of using indexes it uses property
+everything before the colons : is called properties
+anything after the colons : is called as values
+properties might be any data numbers/ strings/ arrays or any data type.
+
+
+// Example
+
+var ourDog = {
+"name":"camper",
+"legs": 4,
+"tails": 1,
+"friends": ["everything"!]
+};
+
+// only change code below this line.
+
+var myDog = {
+
+"name":"quincy",
+"legs": 3,
+"tails": 2,
+"friends": []
+};
+
+like this we can create our own object..
+
+
+
+
+
+
+80) ACCESSING OBJECT PROPERTIES WITH DOT NOTATION
+**there are 2 main ways to access a property on an object.
+a) dot notation
+B) bracket notation 
+
+// setup
+
+var testObj = {
+"hat": "ballcap",
+"hat": "ballcap",
+"hat": "ballcap",
+};
+
+
+// only change code below this line.
+
+
+var hatValue = testObj.hat;
+
+var shirtValue = testObj.shirt;
+
 
 
 
