@@ -928,45 +928,22 @@ return answer;
 
 
 function isLess(a, b) {
-
-// Fix this code
-
 if (a < b) {
-
 return true;
 } else {
 return false;
 }
 }
 
-// change these values to test
-
 console.log(isLess(10, 15))
 
-
-***** instead we should do
 
 function isLess(a, b) {
-
-// Fix this code
-
-return a < b {
-
-
-// change these values to test
+return a < b 
+}
 
 console.log(isLess(10, 15))
-
-we get true.
-
-
 console.log(isLess(20, 15))
-
-we get false.
-
-
-
-
 
 
 77) RETURNING EARLY PATTERN FROM FUNCTIONS
@@ -980,16 +957,12 @@ if (a < 0 || b < 0) {
 return undefined;
 }
 
-
 // only change code above this line
 
 return Math.round(Math.pow(Math.sqrt(a)+ Math.sqrt(b), 2));
 
 // change values below to test your code.
 console.log(abTest(2,2));
-
-
-
 
 
 78) COUNTING CARDS
@@ -1102,6 +1075,154 @@ var testObj = {
 var hatValue = testObj.hat;
 
 var shirtValue = testObj.shirt;
+
+
+
+
+81) ACCESSING OBJECT PROPERTIES WITH BRACKET NOTATION
+** you can use bracket notation any time but it is required if the name has space in it.
+
+// setup
+
+var testObj = {
+"an entree": "hamburger",
+"my side": "veggies",
+"the drink": "water",
+};
+
+
+// only change code below this line.
+
+
+var entreeValue = testObj["an entree"];
+
+var drinkValue = testObj['the drink'];
+
+** both "" & '' can be used to mention
+
+
+
+82) ACCESSING OBJECT PROPERTIES WITH VARIABLES
+
+** BRACKET PROPERTIES ARE ALSO BE USED LOOK UP OBJECT PROPERTIES USING VARIABLES
+
+// setup
+
+
+var testObj = {
+12: "Namath",
+16: "Montana",
+19: "Unitas",
+};
+
+
+// only change code below this line.
+
+
+var playerNumber = 16;
+
+var player = testObj[playerNumber];
+
+
+
+
+83) UPDATING OBJECT PROPERTIES
+
+// Example
+
+var ourDog = {
+"name":"camper",
+"legs": 4,
+"tails": 1,
+"friends": ["everything"!]
+};
+
+ourDog.name = "happy camper";
+
+//setup
+
+var myDog = {
+
+"name":"coder",
+"legs": 4,
+"tails": 1,
+"friends": ["freecodecamp campers"]
+};
+
+// only change code below this line
+
+myDog.name = "happy coder";
+
+
+** BY DOING THIS WE CAN THE DOG NAME
+
+
+
+
+
+84) ADD NEW PROPERTIES TO AN OBJECT
+
+// Example
+
+var ourDog = {
+"name":"camper",
+"legs": 4,
+"tails": 1,
+"friends": ["everything"!]
+};
+
+ourDog.bark = "bow wow";
+
+//setup
+
+var myDog = {
+
+"name":"coder",
+"legs": 4,
+"tails": 1,
+"friends": ["freecodecamp campers"]
+};
+
+// only change code below this line
+
+myDog.['bark'] = "woof!"
+
+
+** BY DOING THIS WE CAN add new property
+
+
+
+
+85) DELETE PROPERTIES FROM AN OBJECT
+
+
+// Example
+
+var ourDog = {
+"name":"camper",
+"legs": 4,
+"tails": 1,
+"friends": ["everything"!]
+};
+
+delete ourDog.bark;
+
+//setup
+
+var myDog = {
+
+"name":"coder",
+"legs": 4,
+"tails": 1,
+"friends": ["freecodecamp campers"]
+};
+
+// only change code below this line
+
+delete myDog.tails;
+
+
+** BY DOING THIS WE CAN delete properties
 
 
 
