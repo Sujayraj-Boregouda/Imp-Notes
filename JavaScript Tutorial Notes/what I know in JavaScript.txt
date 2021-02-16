@@ -1226,6 +1226,181 @@ delete myDog.tails;
 
 
 
+86) USING OBJECTS FOR LOOKUPS
+objects can be taught as key value storage like a dictionary.
+you can use object to look up values
+you can replace switch with the object
+// setup
+
+function phoneticLookup(val) {
+var result = "";
+
+// only change code below this line
+
+switch(val) {
+case"alpha":
+result = "adams";
+break;
+case"bravo":
+result = "boston";
+break;
+case"charlie":
+result = "chicago";
+break;
+case"delta":
+result = "denver";
+break;
+case"echo":
+result = "easy";
+break;
+case"foxtrot":
+result = "frank";
+break;
+}
+
+or
+
+var lookup = {
+"alpha": "adams",
+"bravo": "boston",
+"charlie": "chicago",
+"delta": "denver",
+"echo": "easy",
+"foxtrot": "frank",
+};
+
+result = lookup[val];
+
+// only change code below this line
+
+return result;
+}
+
+// change this value to test
+
+console.log(phoneticLookup("charlie"));
+
+like this we can use object instead switch.
+
+
+
+
+
+87) TESTING OBJECTS FOR PROPERTIES
+
+**hasown used to check whether the object has property or not.
+
+
+// setup
+
+var myObj = {
+gift: "pony",
+pet: "kitten",
+bed: "sleigh",
+};
+
+function checkObj(checkProp) {
+// your code here
+
+if (myObj.hasOwnProperty(checkProp)) {
+return myObj[checkProp];
+} else {
+return "not found"
+}
+}
+
+// test your code by modifying these values
+console.log(checkObj("gift"));
+
+
+
+88) MANIPULATING COMPLEX OBJECTS
+
+** a javascript object is a way to store flexible data.
+any thing between open bracket & close barcket is called as arrays.
+after each element in array you need comma
+var myMusic = [
+{
+"artist": "billy joel",
+"title": "piano man",
+"release_year": 1973,
+"formats": [
+"CD"
+"8T"
+"LP"
+],
+"gold": true
+},
+// add record here (** like this below we can add new element in a object, by putting comma )
+{
+"artist": "beau carnes",
+"title": "cereal man",
+"release_year": 2003,
+"formats": [
+"youtube video"
+]
+
+
+
+
+89) ACCESSING NESTED OBJECTS
+
+** in order to acces sub properties of the object, you can together the dot or chain notation
+** if we have space in the content then yoy have to use bracket notations.
+// setup
+var myStorage = {
+"car": {
+"inside": {
+"glove box": "maps",
+"passenger seat": "crumbs"
+},
+"outside": {
+"trunk": "jack"
+}
+}
+};
+
+
+var gloveBoxContents = myStorage.car.inside["glove box"]; // change this line]
+we get maps
+
+
+
+
+90) ACCESSING NESTED ARRAYS
+
+array barcket notation can be changed to access nested arrays
+
+
+
+// setup
+
+var myPlants = [
+{
+type: "flowers",
+list: [
+"rose"
+"tulip"
+"dandelion"
+]
+},(** comma means  new element)
+{
+type: "trees",
+list: [
+"fir",
+"pine",
+"birch"
+]
+}
+};
+
+// only change code below this line
+
+var secondTree = myPlants[1].list[1];
+
+we get pine
+
+
 
 
 
