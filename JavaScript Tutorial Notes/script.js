@@ -1,12 +1,18 @@
-function abTest(a, b) {
-    if (a < 0 || b < 0) {
-    return undefined;
-    }
-    
-    return Math.round(Math.pow(Math.sqrt(a)+ Math.sqrt(b), 2));
-}
+var ourDog = {
+    "name":"camper",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["everything!"]
+    };
 
-    console.log(abTest(-2,2));
+
     
-    
-    
+    var  mummy = {
+        "name": "Gayatri",
+        "surname": "Boregouda",
+        "age": 56,
+        "number": 9113092597,
+    };
+
+
+    console.log(mummy)
