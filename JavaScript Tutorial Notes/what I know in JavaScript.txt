@@ -1064,8 +1064,8 @@ B) bracket notation
 
 var testObj = {
 "hat": "ballcap",
-"hat": "ballcap",
-"hat": "ballcap",
+"shirt": "ballcap",
+"shoes": "ballcap",
 };
 
 
@@ -1585,6 +1585,210 @@ myArray.push(i);
 
 console.log(myArray);
 we get [9,7,5,3,1]
+
+
+
+96) ITERATE THROUGH AN ARRAY WITH A FOR LOOP
+
+IT IS COMMON IN JAVASCRIPT TO ITERATE CONTENTS THROUGH THE ARRAY
+
+
+
+/ example
+
+var ourArr = [9, 10, 11, 12];
+var ourTotal = 0;
+
+for (var i = 0; i < ourArr.length; i++) {
+ourTotal += ourArr(i);
+}
+
+console.log(ourTotal);
+we get 42
+
+//setup
+
+
+var myArr = [2,3,4,5,6];
+var total = 0;
+
+// only change code below this line.
+
+
+for (var i = 0; i < myArr.length; i++) {
+total += myArr[i];
+}
+
+console.log(total);
+we get 20
+
+
+
+
+97) NESTING FOR LOOPS
+
+if you have a multidimensional or nested array you can use nested for loops to access all the array elements.
+
+i= outer array (ARR.LENGTH ITEATES LENGTH OF 3)
+j= inner array (INSIDE I) 
+
+function multiplyAll(arr) {
+
+var product = 1;
+
+for (var i=0; i < arr.length; i++) {
+
+for(var j=0; j < arr[i].length; j++) {
+
+product *= arr[i][j];
+}
+}
+return product;
+}
+
+var product = multiplyAll([[1,2],[3,4],[5,6,7]]);
+
+
+console.log(product);
+we get 5040 
+
+
+
+
+98) ITERATE WITH DO... WHILE LOOPS
+
+while loop fist checks the condition before running any code within the loop.
+do while loop will always run atleast one time and then it will check the condition.
+
+
+(while loop)
+
+// setup
+
+var myArray = [];
+var i = 10;
+
+// only change code below this line.
+
+while (i < 5) {
+myArray.push(i);
+i++;
+}
+
+console.log(i, myArray);
+we get 10
+
+or
+
+(do while loop  below)
+
+// setup
+
+var myArray = [];
+var i = 10;
+
+// only change code below this line.
+
+ do {
+myArray.push(i);
+i++;
+}while (i < 5)
+
+console.log(i, myArray);(if the condition is false then it will break out of the loop)
+we get 11,[10] now i is 11 & 10 is added to it.
+
+
+
+
+99) PROFILE LOOKUP (CODING CHALLENGE)
+
+// Setup
+
+var contacts = [
+{
+
+"firstaName": "Akira",
+"lastName": "Laine",
+"number": "8543236543",
+"Likes": ["Pizza", "coding", "Brownie Points"]
+},
+{
+
+"firstaName": "Harry",
+"lastName": "Potter",
+"number": "8994372684",
+"Likes": ["Hogwarts", "Magic", "Hagrid"]
+},
+{
+
+"firstaName": "Sherlock",
+"lastName": "Holmes",
+"number": "8487345643",
+"Likes": ["Intriguing Cases", "Violin"]
+},
+{
+
+"firstaName": "Kristian",
+"lastName": "vos",
+"number": "unknown",
+"Likes": ["Javascript", "Gaming", "Foxes"]
+}
+};
+
+
+function lookupProfrile(name, prop) {
+
+for (var i = 0; i < contacts.length; i++) {
+
+if (contacts [i].firstName === name) 
+ 
+return contacts[i][prop] || "No such property";
+}
+}
+return "No such content";
+
+// Change these values to test your function
+
+var data = lookupProfile("Akira", "Likes");
+
+console.log(data);
+
+["pizza", "coding", "brownie points"]
+
+
+
+
+100) GENERATE RANDOM FRACTIONS
+
+to create a random decimal number in javasript
+its with the math.random function
+Math.random can never be 1 it can be zero 
+
+function randomFraction() {
+
+
+return 0;
+
+}
+
+console.log(randomFraction());
+
+
+***or
+
+
+function randomFraction() {
+
+
+return Math.random();
+
+}
+
+console.log(randomFraction());
+
+we get
+
+0.23813741879825767
 
 
 
