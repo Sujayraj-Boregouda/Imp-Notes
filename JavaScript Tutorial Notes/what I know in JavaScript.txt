@@ -1926,3 +1926,286 @@ checkEqual(1, 2);
 
 
 
+106) USE MULTIPLE CONDITIONAL (TERNARY) OPERATORS
+
+you can nest them with any each other which gives them more power
+
+
+function checkSign(num) {
+
+return num > 0 ? "positive" : num < 0 ? "negative" : "zero" ; 
+
+}
+
+console.log(checkSign(0));
+
+
+** after "positive" everything  is ternary
+
+
+
+
+107) DIFF B/W VAR & LET KEYWORD
+
+before to declare variable you have to use var keyword.
+but after ES6 2015 we can also Let & Const
+let does not let you declare variable twice.
+use strict catches common coding mistakes & takes action.
+
+
+var catName = "Quincy";
+
+var quote;
+
+var catName = "Beau";
+
+function catTalk() {
+
+"use strict";
+
+catName = "Oliver";
+
+quote = catName + " says Meow!";
+
+}
+
+catTalk();
+
+wew dont get anything
+
+
+***** or
+
+let catName = "Quincy";
+
+let quote;
+
+catName = "Beau";
+
+function catTalk() {
+
+"use strict";
+
+catName = "Oliver";
+
+quote = catName + " says Meow!";
+
+}
+
+catTalk();
+ we get beau
+
+
+
+
+108) COMPARE SCOPES OF THE VAR & LET KEYWORDS
+
+when you declare variable with var you declare it globally. or locally if declared inside a function.
+but let is limited to block statements, good to define the only the area they want to define.
+
+
+
+function checkscope() {
+"use strict";
+
+let i = "function scope";
+
+if (true) {
+
+let i = "block scope";
+console.log("Block scope i is: ", i");
+}
+
+console.log("Function scope i is: ", i");
+return i;
+}
+
+checkScope();
+we get
+Block scope i is: "block scope"
+Function scope i is: "function scope"
+
+
+or
+
+function checkscope() {
+"use strict";
+
+//let i = "function scope";
+
+if (true) {
+
+var i = "block scope";
+console.log("Block scope i is: ", i");
+}
+
+console.log("Function scope i is: ", i");
+return i;
+}
+
+checkScope();
+we get
+Block scope i is: "block scope"
+Function scope i is: "block scope"
+
+or
+
+
+function checkscope() {
+"use strict";
+
+//let i = "function scope";
+
+if (true) {
+
+let i = "block scope";
+console.log("Block scope i is: ", i");
+}
+
+console.log("Function scope i is: ", i");
+return i;
+}
+
+checkScope();
+we get
+Block scope i is: "block scope"
+ReferenceError : i is not defined (/index.js:11)
+
+
+
+
+109) DECLARE A READ-ONLY VARIABLE WITH THE CONST KEYWORD
+
+const is another way to declare variable, it has all the features of let, but its also read-only, you cannot re-assign a const.
+
+if you assign a variable with const you cannot reassign it.
+
+if you know for sure that you never want to reassign a variable then only use const.
+
+when you are using const ist very common to use all capital letter. thats another way to remember const
+
+function printManyTimes(str) {
+
+"use strict";
+
+var sentence = str + " is cool!";
+
+sentence = str + " is amazing!"
+
+for(var i = 0; i < str.length; i+=2) {
+console.log(sentence);
+}
+
+}
+
+printManyTimes("freeCodeCamp");
+
+
+we get freeCodeCamp is amazing
+
+but if we use const
+
+
+like this
+
+function printManyTimes(str) {
+
+"use strict";
+
+const sentence = str + " is cool!";
+
+sentence = str + " is amazing!"
+
+for(var i = 0; i < str.length; i+=2) {
+console.log(sentence);
+}
+
+}
+
+printManyTimes("freeCodeCamp");
+
+
+we get Error: SyntaxError: unknown: "sentence" is read-only (/index.js:1)
+
+
+or
+
+now do like this
+
+
+function printManyTimes(str) {
+
+"use strict";
+
+const SENTENCE = str + " is cool!";
+
+
+for(let i = 0; i < str.length; i+=2) {
+console.log(SENTENCE);
+}
+
+}
+
+printManyTimes("freeCodeCamp");
+
+
+we get Error: freeCodeCamp is cool
+
+
+
+
+
+
+110)  MUTATE AN ARRAY DECLARED WITH CONST
+
+  
+while you cannot reassign a variable declared with const but you can mutate an array.
+
+we get if we do like this
+
+const s = [5, 7, 2];
+
+function editInPlace() {
+
+"use strict";
+
+s = [2, 5, 7];
+
+}
+
+editInPlace();
+
+
+we get Error: SyntaxError: unknown: "s" is read-only (/index.js:1)
+
+
+or we sholud do like this to get update an array
+
+
+const s = [5, 7, 2];
+
+function editInPlace() {
+
+"use strict";
+
+s[0] = 2;
+
+s[1] = 5;
+
+s[2] = 7;
+
+}
+
+editInPlace()
+
+console.log(s)
+
+we get
+
+[2, 5, 7]
+
+**note= anything inside [] the box is called as index.
+
+
+
+
