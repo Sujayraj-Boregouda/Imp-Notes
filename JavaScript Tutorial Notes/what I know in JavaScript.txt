@@ -1792,5 +1792,137 @@ we get
 
 
 
+101) GENERATE RANDOM WHOLE NUMBERS
+
+means everytime we console we get random diff nubers specified b/w
+
+math.roandom * no we get rounded off  math floor
+
+
+
+ 
+var randomNumberBetween0and19 = Math.floor(Math.random()*20;
+
+
+function randomWholeNum() {
+
+
+return Math.floor(Math.random()* 10; *****(any random no b/w o to 9)
+}
+
+
+console.log(randomWholeNum());
+
+
+
+
+
+102) GENERATE RANDOM WHOLE NUMBERS WITHIN A RANGE
+
+
+// Example
+
+
+function ourRandomRange(ourMin, ourMax) {
+
+return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
+
+}
+
+ourRandomRange(1, 9);
+
+// Only change cod below this line.
+
+function randomRange(myMin, myMax) {
+
+return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+
+}
+
+var myRandom = randomRange(5, 15);
+
+console.log(myRandom);
+
+
+
+
+103) USE THE PARSEINT FUNCTION
+
+it takes a string & returns it to integer
+
+if a string cannot be converted in to the integer. it shows you, nan=not a number.
+
+
+function convertToInteger(str) {
+
+return parseInt(str);
+
+}
+
+convertToInteger("56");
+
+
+
+104) USE THE PARSEINT FUNCTION WITH A RADIX
+
+
+radix specifies base of the number in string
+
+base2=binary
+base10=default
+converts binary into to integer.
+
+function convertToInteger(str) {
+
+return parseInt(str, 2);
+
+}
+
+convertToInteger("10011");
+
+
+
+105) USE THE CONDITIONAL (TERNARY) OPERATOR.(imp)
+
+
+its like one line if else expression.
+
+// condition ? statement-if-true : statement-if-false ; 
+
+
+
+function checkEqual(a, b) {
+
+if(a === b) {
+
+return true;
+
+}
+
+else {
+
+return false;
+
+}
+}
+checkEqual(1, 2);
+
+***** or  
+
+
+insted the long way as the above we use short (ternary opration)
+
+function checkEqual(a, b) {
+
+return a === b ? true : false;
+
+return a === b;
+
+}
+
+checkEqual(1, 2);
+
+** (above both lines have same meaning)
+
 
 
