@@ -2209,3 +2209,255 @@ we get
 
 
 
+
+
+111) PREVENT OBJECT MUTATION
+
+const doesnt alone protect the data from the mutation
+
+use object.freeze(use whwn you dont what any of the object to change)
+
+
+function freezeObj() {
+
+"use strict";
+
+const MATH_CONSTANTS = {
+
+PI: 3.14
+
+};
+
+try {
+
+MATH_CONSTANTS.PI = 99;
+} catch ( ex) {
+
+console.log(ex); (**ex means exemption)
+
+}
+
+return MATH_CONSTANTS.PI;
+}
+
+const PI = freezeObj();
+
+console.log(PI);
+
+
+we get, but we dont want to change pi
+99
+
+
+or
+
+
+
+function freezeObj() {
+
+"use strict";
+
+const MATH_CONSTANTS = {
+
+PI: 3.14
+
+};
+
+
+Object.freeze(MATH_CONSTANTS);
+
+try {
+
+MATH_CONSTANTS.PI = 99; (** here it skips the try & executes catch to console.log(ex)
+} catch ( ex) {
+
+console.log(ex); (**ex means exemption)
+
+}
+
+return MATH_CONSTANTS.PI;
+}
+
+const PI = freezeObj();
+
+console.log(PI);
+
+
+we get, 
+TypeError: Cannot assign to read only property 'PI' of object '<#Object>' (/index.js:13)
+
+
+
+
+
+
+112) USE ARROW FUNCTIONS TO WRITE CONCISE ANONYMOUS FUNCTIONS
+
+any function which has no name is called as anonymous function
+
+
+
+
+var magic = function() {
+
+return new Date();
+};
+
+or
+
+**instead
+var magic () => {
+
+return new Date();
+};
+
+because whenever you have an anonymous function you can change it into arrow function.
+
+
+or
+
+const MAGIC = () => new Date();
+
+if we are one value, we dont need {} and return keyword, we can directly put.
+all the above has same meaning.
+
+
+
+
+
+
+113) WRITE ARROW FUNCTIONS WITH PARAMETERS
+
+just like the normal function , you can pass arguments to arrow functions.
+
+
+var myConcat = function(arr1 arr2) {
+return arr1.Concat(arr2);
+};
+
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+
+or
+
+
+var myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+
+we get [1, 2, 3, 4, 5]
+
+
+or 
+
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+
+
+
+
+114) WRITE HIGHER ORDER ARROW FUNCTIONS
+
+
+arrow functions are really well with higher order functions mapp / filter & reduce
+they take functions as argument for passing collection of data.
+whenever one function take another function as argument then that is a good time for arrow function.
+map function takes the function as argument
+if have only single num argumnet then it dooesnt need to close () like this just on ( is needed.
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+
+const squareList = (arr) => {
+
+const squaredIntegers = arr;
+
+return squareIntegers;
+
+};
+
+const squareIntegers = squareList(realNumberArray);
+
+console.log(squaredIntegers);
+
+we get
+
+[4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2]
+
+
+or
+
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+
+const squareList = (arr) => {
+
+const squaredIntegers = arr.filter(num => Number.isInteger(num) && num > 0).map(x => x*x);
+
+return squareIntegers;
+
+};
+
+const squareIntegers = squareList(realNumberArray);
+
+console.log(squaredIntegers);
+
+we get
+
+[16, 1764, 36]
+* we computed the squares of only +ve integer in the array.
+
+
+
+
+115) WRITE HIGHER ORDER ARROW FUNCTIONS
+
+
+inorder to create more flexible functions you can use default parameter.
+the default parameter kicks in when the argument is not specified or undefined
+
+***if the value isnt passed in it will set into 1 automatically
+but if value is passed it will set to whatever it passed in.***
+const increment = (function() {
+return function increment(number, value =1) {
+return number + value;
+};
+})();
+
+console.log(increment(5, 2));
+console.log(increment(5));
+we get 
+7
+6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
