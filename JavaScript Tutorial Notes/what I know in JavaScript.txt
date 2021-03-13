@@ -2044,6 +2044,8 @@ return i;
 }
 
 checkScope();
+
+
 we get
 Block scope i is: "block scope"
 Function scope i is: "block scope"
@@ -2429,6 +2431,711 @@ console.log(increment(5));
 we get 
 7
 6
+
+116) USE THE REST OPEARATOR WITH FUNCTION PARAMETERS
+
+the rest opeartor allows you to create a function that takes a variable number argument.
+
+the rest operator is three dots
+
+const sum = (function() {
+
+return function sum(x, y, z) {
+
+const args = [x, y, z];
+
+return args.reduce((a, b) => a+b, 0);
+
+};
+
+}) ();
+
+console.log(sum(1, 2, 3));
+we get 6
+
+or
+
+const sum = (function() {
+
+return function sum(...args) {
+
+
+return args.reduce((a, b) => a+b, 0);
+
+};
+
+}) ();
+console.log(sum(1, 2, 3, 4));
+we get 10
+before you can add 3 arguments but now you can pass any number of arguments.
+
+
+
+
+
+117) USE THE SPREAD OPERATOR TO EVALUATE ARRAYS IN-PLACE
+
+the spread operator looks jus like a rest operator three dots
+but it expands in already existing array spreads OR IT spreads out in array
+it takes array & spreads out into individual parts. 
+
+
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+(function() {
+arr2 = arr1; //change this line
+arr1[0] = 'potato'
+})();
+console.log(arr2);
+
+
+we get
+
+["potato", "FEB", "MAR", "APR", "MAY"]
+
+
+or
+
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+(function() {
+arr2 = [...arr1]; //BY DOING THIS ARRAY 2 BECOMES EQUAL TO ARRAY 1
+arr1[0] = 'potato'
+})();
+console.log(arr2);
+
+
+we get
+
+["JAN", "FEB", "MAR", "APR", "MAY"]
+
+
+118) USE DESTRUCTING ASSIGNMENT TO ASSIGN VARIABLES FROM OBJECTS
+
+
+for neatly assigning the values taken directly from object to a variable.
+
+var voxel = {x: 3.6, y: 7.4, z: 6.54};
+
+var x = voxel.x; // x =3.6 (** old way)
+
+var y = voxel.y; // x =7.4
+
+var z = voxel.z; // x =6.54
+
+
+const {x: a, y : b, z: c} = voxel; //a=3.6, b=7.4, c=6.54 (new way destruction syntax)
+
+
+const AVG_TEMPERATURES = {
+today: 77.5,
+tomorrow: 79
+};
+
+function getTempOfTmrw(avgTemperature) {
+"use strict";
+// change code below this line
+
+const tempOfTomorow = undefined; // change this line
+// change code above this line
+
+return tempOfTomorrow;
+
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURES)); // SHOULD BE 79
+
+
+or
+
+
+var voxel = {x: 3.6, y: 7.4, z: 6.54};
+
+const {x: a, y : b, z: c} = voxel; //a=3.6, b=7.4, c=6.54 (new way destruction syntax)
+
+
+const AVG_TEMPERATURES = {
+today: 77.5,
+tomorrow: 79
+};
+
+function getTempOfTmrw(avgTemperature) {
+"use strict";
+// change code below this line
+
+const{ tomorrow : tempOfTomorow } = avgTemperatures; // change this line
+
+// change code above this line
+
+return tempOfTomorrow;
+
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURES)); // SHOULD BE 79
+
+
+
+119) DESTRUCTURING ASSIGNMENT WITH NESTED OBJECTS
+
+
+you can also use destructuring assignment to assign the variables from nested objects.
+
+
+
+const LOCAL_FORECAST = {
+today: { min: 72, max: 83 },
+tomorrow: { min: 73.3, max: 84.6 },
+};
+
+function getMaxOfTmrw(forecast) {
+"use strict";
+
+const { tomorrow : { max : maxOfTomorrow }} = forecast;
+
+return maxOfTomorrow;
+
+}
+
+console.log(getMaxOfTmrw(LOCAL_FORECAST));
+
+we get 84.6
+
+
+
+
+
+
+120) USE DESTRUCTURING ASSIGNMENT TO ASSIGN VARIABLES FROM ARRAYS
+
+diff b/w destructuring from arrays & destructuring from objects is you cannot specify which element in the array . it jus goes in order.
+
+use destructuring of arrays to shift the places
+
+
+const [z, x, , y] = [1, 2, 3, 4, 5, 6];
+
+console.log(z, x, y);
+we get (1, 2, 4)
+
+
+let a = 8, b = 6;
+
+(() => {
+"use strict";
+[a, b] = [b, a]
+})();
+console.log(a);
+console.log(b);
+
+we get
+6
+8 
+
+
+
+
+
+
+121) USE DESTRUCTURING ASSIGNMENT WITH THE REST OPERATOR
+
+ to reassign array elements we sholud us this
+
+
+const source = [1,2,3,4,5,6,7,8,9,10];
+
+function removeFirstTwo(list) {
+
+const [ , , ...arr] = list; (** ,, two comma mean  to leave fist two elements and... keep rest of all elements)
+
+return arr;
+
+}
+
+const arr = removeFirstTwo(source);
+console.log(arr);
+console.log(source);
+we get
+[3,4,5,6,7,8,9,10]
+[1,2,3,4,5,6,7,8,9,10]
+
+
+
+122) USE DESTRUCTING ASSIGNMENT TO PASS AN OBJECT AS A FUNCTION'S PARAMETERS
+instead of passing entire data we jus pass what we need (max & min)
+this is commonly used in api calls when you are getting from api requests
+
+const stats = {
+max: 56.78,
+standard_deviation: 4.34,
+median: 34.54,
+mode: 23.87,
+min: -0.75,
+average: 35.85
+
+};
+
+const half = (function() {
+
+return function half(stats) {
+return (stats.max + stats.min) / 2.0;
+};
+
+})():
+console.log(stats);
+console.log(half(stats));
+
+we get
+
+{max: 56.78, standard_deviation: 4.34, median: 34.54, mode:23.87, min: -0.75, average: 35.85}
+28.015
+
+or
+
+const stats = {
+max: 56.78,
+standard_deviation: 4.34,
+median: 34.54,
+mode: 23.87,
+min: -0.75,
+average: 35.85
+
+};
+
+const half = (function() {
+
+return function half(stats) {
+return (max + min) / 2.0;
+};
+
+})():
+console.log({ max, min });
+console.log(half(stats));
+
+we get
+
+{max: 56.78, standard_deviation: 4.34, median: 34.54, mode:23.87, min: -0.75, average: 35.85}
+28.015
+
+
+
+123) CREATE STRINGS USING TEMPLATE LITERALS
+
+template literals are a special type of string that makes creating complex strings easier.
+
+you make them with back tick ` (thse could be used instead of using single & double quotation marks) 
+main use of this black tick ` a)is you can use multiline strings
+b) you can use "" & '' inside the string without eccaping them
+c) you can compose variables in the strings
+anything b/w ${} is javascriprt
+
+const person = {
+name: "Zodiac Hasbro",
+age: 56
+};
+
+//Template literal with-line and string interpolation
+
+const greeting = ` Hello, my name is $ {person.name}!
+I am ${person.age} years old.`;
+
+
+console.log(greeting);
+
+** new one
+
+const result = {
+
+success: ["max-length", "no-amd", "prefer-arrow-functions"],
+failure: ["no-var", "var-on-top", "linebreak"],
+skipped: ["id-balcklist", "no-dup-keys"]
+};
+
+function makeList(arr) {
+
+const resultDisplayArray = [];
+
+for (let i = 0; i < arr.length; i++ ) {
+resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`)
+}
+
+return resultDisplayArray;
+}
+
+/** 
+* makeList(result.failure) should return:
+*[` <li class="text-warning">no-var</li>`,
+*<li class="text-warning">var-on-top</li>`,
+*<li class="text-warning">no-var</li>`, ]
+**/
+
+const resultDisplayArray = makeList(result.failure);
+
+console.log(resultDisplayArray) 
+
+we get
+
+hello, my name is hasbro! i am 56 years old.
+
+["<li class="text-warning">na-var</li>", "li class="text-warning">var-on-top</li>", "<li class="text-warning">linebreak</li>"]
+
+
+
+
+
+124) WRITE CONCISE OBJECT LITERAL DECLARATIONS USING SIMPLE FIELDS
+
+
+yes it is added some nice support for easily defining object literals
+
+object is going to have some series of key value pairs
+=> means arrow function
+
+const createPerson = (name, age, gender) => {
+
+return {
+name: name,
+age: age,
+gender: gender,
+};
+
+};
+
+console.log(createPerson("zodiac hasbro", 56, "male"));
+
+we get { name: "zodiac hasbro", age: 56, gender: "male"}
+
+
+
+
+or
+
+if you know, you are going to  going to create an object where create key is key of the variable & value is the value of the variable.
+
+const createPerson = (name, age, gender) => ({ name, age, gender});
+
+console.log(createPerson("zodiac hasbro", 56, "male"));
+
+we get { name: "zodiac hasbro", age: 56, gender: "male"}
+
+
+
+
+
+
+125) WRITE CONCISE DECLARATIVE FUNCTIONS
+
+IN AN  object CONCATING function this  BELOW IS THE LONG WAY TO put an object within the funcion.
+
+
+
+const bicycle = {
+
+gear: 2,
+
+setGear: function(newGear) {
+
+"use strict";
+
+this.gear = new Gear;
+
+}
+
+};
+
+bicycle.setGear(3);
+
+console.log(bicycle.gear);
+
+we get 3
+
+
+or
+
+** 
+
+const bicycle = {
+
+gear: 2,
+
+setGear(newGear) {
+
+"use strict";
+
+this.gear = new Gear;
+
+}
+
+};
+
+bicycle.setGear(3);
+
+console.log(bicycle.gear);
+
+we get 3
+
+
+
+
+
+126) USE CLASS SYNTAX TO DEFINE A CONSTRUCTOR FUNCTION
+
+ES6 PROVIDES a syntax to help create objects using the class keyword
+
+var SpaceShuttle = function(targetPlanet){  // this three line is called as constructor function
+  this.targetPlanet = targetPlanet;
+}
+
+var zeus = new SpaceShuttle('Jupiter');
+
+console.log(zeus.targetPlanet)
+
+we get "jupiter"
+
+
+or 
+
+the class syntax replaces the constructor function creation
+
+class SpaceShuttle {
+  constructor(targetPlanet){ 
+    this.targetPlanet = targetPlanet;
+  }
+}
+
+var zeus = new SpaceShuttle('Jupiter');
+
+console.log(zeus.targetPlanet)
+
+we get "jupiter"
+
+
+next CHALLENGE
+
+function  makeClass() {
+  class Vegetable {
+    constructor(name){
+      this.name = name;
+    }
+  }
+  return Vegetable;
+}
+
+const Vegetable = makeClass();
+const carrot = new Vegetable('carrot');
+console.log(carrot.name);
+
+we get carrot
+
+
+
+
+127) USE GETTERS AND SETTERS TO CONTROL ACCESS TO AN OBJECT
+
+with a class object you often want to obtain values from the object and set a value of a property within an object. 
+These often called Getters and Setters. To get and set the writer.
+we can get the writer and set the writer.
+
+Getter function are meant to simply return or get the value of a n objects private variable to the user without user directly accessing the private variable. 
+so the private variable is _author "UNDERSCORE" that you set when you construct the object.
+
+and when we do get the writer to return this._author ,
+
+so you never actually interact directly with this._author  variable but it get the writer which is the author here
+
+AND when setting it is the same, you never actually interacting with _author but you can set with the writer setter.
+
+this change convert calculations even over write the previous value .
+
+this means the varible only accesible within the class here.
+
+whenever you start a variable with _ ("UNDERSCORE), thats goin to generally signify its a private variable.
+You are not supposed access it outside the scope / class.
+
+class Book {
+  constructor(author) {
+    this._author = author;
+  }
+
+  // Getter
+  get writer(){
+    return this._author;
+  }
+
+  // setter
+  set writer(updatedAuthor){
+    this._author = updatedAuthor;
+  }
+} 
+
+where are not going to set 
+ this._temp = this._temp; because its passed in as a farenheat and we are going it to convert into celcius.
+
+//
+
+function makeClass(){
+  class Thermostat {
+    constructor(temp) {
+      this._temp = 5/9 * (temp - 32);
+    }
+    get temperatur e(){
+      return this._temp;
+    }
+    set temperature(updatedTemp){
+      this._temp = updatedTemp;
+    }
+  }
+  return Thermostat;
+}
+
+
+const Thermostat = makeClass();
+const thermos = new Thermostat(76);  // when we instantiating an object you use the new keyword 
+let temp = thermos.temperature;  // if generally there is a function you see () after the fuunction name, but if its variable or property name its not going to have () jus like .temperature in this code. so getters and setters are accesed similar to properties. we use getter here 
+thermos.temperature = 26; // we use setter here
+temp = thermos.temperature;
+
+console.log(temp);
+
+// new program
+
+
+
+128) UNDERSTAND THE DIFFERENCE BETWEEN IMPORT AND REQUIRE.
+
+In the past people would used require functions to import functions and code from other files
+but now we have import and exports 
+you can export in one file and import in other file.
+it also allows you to import only certain functions and variables.
+
+**
+we have in other file string_functions.js
+
+export const capitalizeString = str => str.toUpperCase()
+
+** actual file 
+to import we use {}**
+
+import { capitalizeString } from "./string_function"  //// .js is assumed, you dont neec to put the file name.
+
+const cap = capitalizeString("hello!");
+
+console.log(cap);
+
+
+
+
+129) USE EXPORT TO REUSE A CODE BLOCK
+
+You export from one file to import in another file..
+
+const capitalizeString = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+export { capitalizeString };  // like this we can export the above functions
+
+export const foo = "bar"; // like thos we can export variable.
+export const bar = "foo";
+
+later we can import them in to another file.
+
+
+
+
+130) USE * TO IMPORT EVERYTHING FROM A FILE.. 
+
+import * as capitalizeStrings from "capitalize_strings"; // you need put ./ if the file is in the same directory.
+
+as = anything we want to import  **
+
+"" = filename**
+
+
+
+131) CREATE AN EXPORT FALLBACK WITH EXPORT DEFAULT
+
+export default is called as fallback export often used when you only want to export one thing from a file. 
+
+** exporting file data
+
+export default function subtract(x,y) {return x - y;}
+
+
+
+132) IMPORT A DEFAULT EXPORT
+
+if you had not set an default export to a function, and when you use it, it will show red underline.
+
+if it is not default export you put {} , but if it is default export then you need not to put.
+
+**
+
+import subtract from "math_functions";
+
+subtract(7,4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
