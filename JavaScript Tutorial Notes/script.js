@@ -1,37 +1,20 @@
- /*
- function makeClass(){
-     class vegetable{
-         constructor (name){
-             this.name = name;
-         }
-     }
-     return vegetable;
- }
+/*
+const capitalizeString = str =>{
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+const cap = capitalizeString("boregouda")
+
+console.log(cap)
+
+*/
 
 
- const vegetable = makeClass();
- 
- 
- const beetroot = new vegetable ("beetroot");
-
- console.log(beetroot.name)
-
- */
+const capitalizeString = str =>{
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
 
- function makeClass(){
-     class vegetable{
-         constructor (name){
-             this.name = name;
-         }
-     }
-     return vegetable;
- }
+const cap = capitalizeString("gayatri")
 
-
- const vegetable = makeClass();
-
- const carrot = new vegetable("carrot")
-
- console.log(carrot.name)
-
+console.log(cap)
