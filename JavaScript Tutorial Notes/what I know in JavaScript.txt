@@ -1,5 +1,6 @@
 
 *****************
+Total
 
 
 1) Data types & Variables
@@ -3077,7 +3078,7 @@ import subtract from "math_functions";
 
 subtract(7,4);
 
-
+Total 132 points
 
 **************
 
